@@ -1,16 +1,16 @@
 default:
-  text_skin: default
-  highlight_theme: default
+  text_skin: dark
+  highlight_theme: tomorrow-night-eighties
   lang: en
   paths:
     root: /
     home: /
     archive:  /archive.html
     rss:  /feed.xml
-  mathjax: false
-  mathjax_autoNumber: false
-  mermaid: false
-  chart: false
+  mathjax: true
+  mathjax_autoNumber: true
+  mermaid: true
+  chart: true
   toc:
     selectors: 'h1,h2,h3'
   sources: bootcdn
@@ -30,7 +30,7 @@ default:
     show_edit_on_github: false
     show_date: true
     show_tags: true
-    show_author_profile: false
+    show_author_profile: true
     show_subscribe: false
     full_width: false
     sharing: false
