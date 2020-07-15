@@ -1,6 +1,8 @@
 # What Are CTFs?
 CTF or [Capture The Flag](https://en.wikipedia.org/wiki/Capture_the_flag#Computer_security) in context of computer security, 
+
 {%- include extensions/youtube.html id='8ev9ZX9J45A' -%}
+
 {%- include extensions/youtube.html id='Lus7aNf2xDg' -%}
 
 
@@ -18,6 +20,7 @@ A jeopardy ctf event typically spans two days but there are events which may spa
 In an attack/defense style competitions, each team is given a machine (or a small network) to defend, typically on an isolated competition network.  
 Teams are scored on both their success in defending their assigned machine(s) and on their success in attacking the other team's machines. A variation from classic flag-stealing is to "plant" own flags on opponent's machines.  
 These kinds of events are less frequent and typically run only for a few hours.  
+
 {%- include extensions/youtube.html id='RXgp4cDbiq4' -%}
 
 ### King Of The Hill
