@@ -51,7 +51,7 @@ header:
     
   - titles:
       # @start locale config
-      en      : &EN       About
+      en      : &EN       Assignments
       en-GB   : *EN
       en-US   : *EN
       en-CA   : *EN
