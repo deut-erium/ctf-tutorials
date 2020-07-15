@@ -1,14 +1,12 @@
-# What Are CTFs?
 CTF or [Capture The Flag](https://en.wikipedia.org/wiki/Capture_the_flag#Computer_security) in context of computer security, are special kind of information security competitions which serve as a gamified educational exercise to give participants experience in securing a machine as well as conducting and reacting to sort of attacks found in real world or some (supposedly) fun programming concept otherwise.
 
 ## What are Flags which we are capturing?
 Flags are often secret strings hidden in purposefully-vulnerable programs, websites or challenges. The challengers have to steal/hack the flag from the organizers of CTF event (as in Jepoardy format) or from other challengers (attack/defence format). The flags serve as a currency or proof of work for solving a given challenge which one can exchange for points :wink:  
 A typical flag may look like `flag{s0m3_puN_0r_c0mm3n7_r3l473d_70_7h3_ch4ll3n63}`  
 
-{%- include extensions/youtube.html id='8ev9ZX9J45A' -%}
+<div>{%- include extensions/youtube.html id='8ev9ZX9J45A' -%}</div>
   
-How can one learn from CTFs,  
-{%- include extensions/youtube.html id='Lus7aNf2xDg' -%}
+<div>{%- include extensions/youtube.html id='Lus7aNf2xDg' -%}</div>
 
 ## Types of CTFs
 As crazy as hacking can get, so can get the competitions. CTFs are based on various formats. Each format has its own timeline, skillset, category and difficulty of interest.
@@ -26,7 +24,7 @@ In an attack/defense style competitions, each team is given a machine (or a smal
 Teams are scored on both their success in defending their assigned machine(s) and on their success in attacking the other team's machines. A variation from classic flag-stealing is to "plant" own flags on opponent's machines.  
 These kinds of events are less frequent and typically run only for a few hours.  
 
-{%- include extensions/youtube.html id='RXgp4cDbiq4' -%}
+<div>{%- include extensions/youtube.html id='RXgp4cDbiq4' -%}</div>
 
 ### King Of The Hill
 King of the Hill (KoTH), as the name suggests, is a competitive hacking game, where teams compete against other teams to compromise a machine and then patch its vulnerabilities to stop other players from also gaining access.  
