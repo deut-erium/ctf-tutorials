@@ -26,6 +26,8 @@ titles:
 key: page-about
 ---
 
+# About
+
 ## What is it about?
 All this is about creating a tutorial which brings front the power of programming in solving ctf tasks.  
 I aim to build upon an intuition with which one can solve CTF tasks with programming without overly relying on online tools and tools in general.  
@@ -37,3 +39,5 @@ Anything! although I am more inclined towards cryptography (and I want to show a
 ## What if you get stuck?
 Always feel free to DM(direct message) on [discord](https://discord.com/new), Username: deuterium#1689.
 Or any other convenient medium of choice.
+
+HACK THE PLANET :metal: :metal: :metal:
