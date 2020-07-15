@@ -1,8 +1,9 @@
 # What Are CTFs?
-CTF or [Capture The Flag](https://en.wikipedia.org/wiki/Capture_the_flag#Computer_security) in context of computer security, 
+CTF or [Capture The Flag](https://en.wikipedia.org/wiki/Capture_the_flag#Computer_security) in context of computer security, are special kind of information security competitions which serve as a gamified educational exercise to give participants experience in securing a machine as well as conducting and reacting to sort of attacks found in real world or some (supposedly) fun programming concept otherwise.
 
 ## What are Flags which we are capturing?
-Flags are often secret strings hidden in purposefully-vulnerable programs, websites or challenges. The challengers have to steal/hack the flag from the organizers of CTF event (as in Jepoardy format) or from other challengers (attack/defence format). The flags serve as a currency or proof of work for solving a given challenge which one can exchange for points :wink:
+Flags are often secret strings hidden in purposefully-vulnerable programs, websites or challenges. The challengers have to steal/hack the flag from the organizers of CTF event (as in Jepoardy format) or from other challengers (attack/defence format). The flags serve as a currency or proof of work for solving a given challenge which one can exchange for points :wink:  
+A typical flag may look like `flag{s0m3_puN_0r_c0mm3n7_r3l473d_70_7h3_ch4ll3n63}`
 
 {%- include extensions/youtube.html id='8ev9ZX9J45A' -%}
 
@@ -10,7 +11,7 @@ Flags are often secret strings hidden in purposefully-vulnerable programs, websi
 
 
 ## Types of CTFs
-As crazy as hacking can get, so can get the competitions. CTFs are based on various formats. Each format has its own timeline, skillset and
+As crazy as hacking can get, so can get the competitions. CTFs are based on various formats. Each format has its own timeline, skillset, category and difficulty of interest.
 
 ### Jeopardy
 Yes somewhat similar to [the show](https://en.wikipedia.org/wiki/Jeopardy!). These can be considered similar to programming contests as all the competiting teams do not attack each other, but rather solve challenges.  
@@ -33,4 +34,29 @@ The longer a team maintains access, the more points it gets.
 These are typically very short (typically an hour) and have strong emphasis on penetration testing. The most interesting aspect of these CTFs is that they can be livestreamed and spectated. Whats more fun than seeing hacking live!   
 [TryHackMe](https://tryhackme.com/games/koth) has been promoting and organizing these events and one can join a game every 15 minutes!  
 
+## Categories
+CTFs cover a wide spectrum of aspects related to cybersecurity and programming in general. Note that sometimes a clear distinction between category can not be made as tasks require a mixed set of skills.
 
+### Cryptography
+[Cryptography](https://en.wikipedia.org/wiki/Cryptography) is a study of secrets. These CTF challenges can cover anything from some old classical cipher(aka caesar) and encodings, breaking self-rolled/poorly designed or implemented cryptographic protocols to implementing new cryptographic attacks based on recent papers/publications. These challenges can involve heavy mathematical and theoretical concepts. 
+
+### Reverse Engineering
+
+
+### Binary Exploitation
+
+### Web Exploitation
+
+### OSINT (Open Source INTelligence)
+
+### Forensics
+
+### Steganography
+
+### Penetration Testing
+
+### Mobile Security
+
+### Game Hacking
+
+### Programming?
