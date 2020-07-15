@@ -35,7 +35,7 @@ future: true
 ##############################
 author:
   type      : "person"
-  name      : Himanshu Sheoran
+  name      : deuterium
   url       : https://deut-erium.github.io
   avatar    : https://github.com/deut-erium/deut-erium.github.io/blob/master/Circle-limit-IV.jpg?raw=1
   bio       : Some words for the nerds
