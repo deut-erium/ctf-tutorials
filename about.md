@@ -26,9 +26,6 @@ titles:
 key: page-about
 ---
 
-# About
-
-## What is it about?
 All this is about creating a tutorial which brings front the power of programming in solving ctf tasks.  
 I aim to build upon an intuition with which one can solve CTF tasks with programming without overly relying on online tools and tools in general.  
 The only tool we need is Python and its always amusing interpreter!  
