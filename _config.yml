@@ -29,7 +29,7 @@ description: > # this means to ignore newlines until "Language & timezone"
 ##############################
 lang: en
 timezone: Asia/Kolkata
-
+future: true
 
 ## => Author and Social
 ##############################
