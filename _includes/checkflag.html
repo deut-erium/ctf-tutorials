@@ -1,0 +1,27 @@
+<div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/forge/0.8.2/forge.all.min.js"></script>
+
+    <script type="text/Javascript">
+        function generateHash()
+	   {
+            var plainText = document.getElementById('plainText').value;
+	        var md = forge.md.sha256.create();  
+            md.start();  
+            md.update(plainText, "utf8");  
+            var hashText = md.digest().toHex();  
+            if (hashText==="{{page.sha256hash}}")
+            {
+                document.getElementById("hashText").innerHTML = "Correct";                
+            }
+            else
+            {
+                document.getElementById("hashText").innerHTML = "incorrect";
+                console.log("{{page.sha256hash}}");
+            }
+        }        
+    </script>
+	<br><strong>Enter the Sample Text : </strong><input id='plainText' type='text' />
+	<br><br><strong>Hashed Text (SHA256)  : </strong><span id='hashText'></span>
+	<br><br><button onclick="generateHash()">Calculate Hash</button>
+</div>
