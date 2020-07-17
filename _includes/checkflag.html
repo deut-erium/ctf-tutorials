@@ -32,19 +32,20 @@
 	    md.start();  
 	    md.update(plainText, "utf8");  
 	    var hashText = md.digest().toHex(); 
-	    if (hashText==="{{page.sha256hash[challengeIndex]}}")
+	    var index = "{{page.challengeIndex}}"
+	    if (hashText=="{{page.sha256hash[index]}}")
 	    {
 		modal.style.display = "block";
 		document.getElementById("checkResult").innerHTML = "Absolutely correct!";
 		document.getElementById("spanResult").innerHTML = "Absolutely correct!"; 
-		console.log(hashText,plainText,"{{page.sha256hash[challengeIndex]}}");
+		console.log(hashText,plainText,"{{page.sha256hash[index]}}");
 	    }
 	    else
 	    {
 		modal.style.display = "block";
 		document.getElementById("checkResult").innerHTML = "Incorrect, try harder";
 		document.getElementById("spanResult").innerHTML = "Incorrect, try harder";
-		console.log(hashText,plainText,"{{page.sha256hash[challengeIndex]}}");
+		console.log(hashText,plainText,"{{page.sha256hash[index]}}");
 	    }
 	    window.onclick = function(event) {
   		if (event.target == modal) {
