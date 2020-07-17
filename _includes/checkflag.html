@@ -1,27 +1,59 @@
 <div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/forge/0.8.2/forge.all.min.js"></script>
-
-    <script type="text/Javascript">
-        function generateHash()
+	<style>
+	.modal {
+	  display: none; /* Hidden by default */
+	  position: fixed; /* Stay in place */
+	  z-index: 1; /* Sit on top */
+	  padding-top: 100px; /* Location of the box */
+	  left: 0;
+	  top: 0;
+	  width: 100%; /* Full width */
+	  height: 100%; /* Full height */
+	  overflow: auto; /* Enable scroll if needed */
+	  background-color: rgb(0,0,0); /* Fallback color */
+	  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	}
+	.modal-content {
+	  background-color: #fefefe;
+	  margin: auto;
+	  padding: 20px;
+	  border: 1px solid #888;
+	  width: 40%;
+	}
+	</style>
+	<script type="text/Javascript">
+	function checkHash()
 	   {
-            var plainText = document.getElementById('plainText').value;
-	        var md = forge.md.sha256.create();  
-            md.start();  
-            md.update(plainText, "utf8");  
-            var hashText = md.digest().toHex();  
-            if (hashText==="{{page.sha256hash}}")
-            {
-                document.getElementById("hashText").innerHTML = "Correct";                
-            }
-            else
-            {
-                document.getElementById("hashText").innerHTML = "incorrect";
-                console.log("{{page.sha256hash}}");
-            }
-        }        
-    </script>
-	<br><strong>Enter the Sample Text : </strong><input id='plainText' type='text' />
-	<br><br><strong>Hashed Text (SHA256)  : </strong><span id='hashText'></span>
-	<br><br><button onclick="generateHash()">Calculate Hash</button>
+	    var plainText = document.getElementById('plainText').value;
+	    var modal = document.getElementById("flagModal");
+	    var md = forge.md.sha256.create();  
+	    md.start();  
+	    md.update(plainText, "utf8");  
+	    var hashText = md.digest().toHex(); 
+            modal.style.display = "block";
+	    if (hashText==="{{page.sha256hash}}")
+	    {
+		document.getElementById("hashText").innerHTML = "Correct";                
+	    }
+	    else
+	    {
+		document.getElementById("hashText").innerHTML = "Incorrect";
+		console.log("{{page.sha256hash}}");
+	    }
+	    window.onclick = function(event) {
+  		if (event.target == modal) {
+    			modal.style.display = "none";
+  		}
+	    }
+	}        
+	</script>
+	<div id="flagModal" class="modal">
+  		<div class="modal-content">
+    			<p id="hashText"></p>
+  		</div>
+	</div>
+	<br><strong>Enter the flag: </strong><input id='plainText' type='text' style="color:black;" />
+	<br><br><button onclick="checkHash()">Calculate Hash</button>
 </div>
