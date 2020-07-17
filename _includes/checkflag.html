@@ -32,15 +32,16 @@
 	    md.start();  
 	    md.update(plainText, "utf8");  
 	    var hashText = md.digest().toHex(); 
-            modal.style.display = "block";
 	    if (hashText==="{{page.sha256hash}}")
 	    {
-		document.getElementById("hashText").innerHTML = "Correct";                
+		modal.style.display = "block";
+		document.getElementById("checkResult").innerHTML = "Correct";                
 	    }
 	    else
 	    {
-		document.getElementById("hashText").innerHTML = "Incorrect";
-		console.log("{{page.sha256hash}}");
+		modal.style.display = "block";
+		document.getElementById("checkResult").innerHTML = "Incorrect";
+		console.log(hashText);
 	    }
 	    window.onclick = function(event) {
   		if (event.target == modal) {
@@ -51,9 +52,9 @@
 	</script>
 	<div id="flagModal" class="modal">
   		<div class="modal-content">
-    			<p id="hashText"></p>
+    			<span id="checkResult"></span>
   		</div>
 	</div>
 	<br><strong>Enter the flag: </strong><input id='plainText' type='text' style="color:black;" />
-	<br><br><button onclick="checkHash()">Calculate Hash</button>
+	<br><br><button onclick="checkHash()">Check Flag</button>
 </div>
