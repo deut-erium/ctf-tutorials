@@ -16,7 +16,6 @@ Wish you luck :sunglasses:
 <!-- inspect element rocks yo flag{congrats} -->
 
 {% include checkflag.html %}
-{% increment challengeIndex %}
 
 ## Task2 
 Since you know the flag, try converting it to hex.  
