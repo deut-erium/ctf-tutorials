@@ -36,14 +36,15 @@
 	    {
 		modal.style.display = "block";
 		document.getElementById("checkResult").innerHTML = "Absolutely correct!";
-		document.getElementById("spanResult").innerHTML = "Absolutely correct!";   
+		document.getElementById("spanResult").innerHTML = "Absolutely correct!"; 
+		console.log(hashText,plainText,"{{page.sha256hash[challengeIndex]}}");
 	    }
 	    else
 	    {
 		modal.style.display = "block";
 		document.getElementById("checkResult").innerHTML = "Incorrect, try harder";
 		document.getElementById("spanResult").innerHTML = "Incorrect, try harder";
-		console.log(hashText,plainText);
+		console.log(hashText,plainText,"{{page.sha256hash[challengeIndex]}}");
 	    }
 	    window.onclick = function(event) {
   		if (event.target == modal) {
