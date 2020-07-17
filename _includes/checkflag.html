@@ -32,7 +32,7 @@
 	    md.start();  
 	    md.update(plainText, "utf8");  
 	    var hashText = md.digest().toHex(); 
-	    if (hashText==="{{page.sha256hash}}")
+	    if (hashText==="{{page.sha256hash[challengeIndex]}}")
 	    {
 		modal.style.display = "block";
 		document.getElementById("checkResult").innerHTML = "Absolutely correct!";
@@ -43,7 +43,7 @@
 		modal.style.display = "block";
 		document.getElementById("checkResult").innerHTML = "Incorrect, try harder";
 		document.getElementById("spanResult").innerHTML = "Incorrect, try harder";
-		console.log(hashText);
+		console.log(hashText,plainText);
 	    }
 	    window.onclick = function(event) {
   		if (event.target == modal) {
