@@ -35,12 +35,14 @@
 	    if (hashText==="{{page.sha256hash}}")
 	    {
 		modal.style.display = "block";
-		document.getElementById("checkResult").innerHTML = "Absolutely correct!";                
+		document.getElementById("checkResult").innerHTML = "Absolutely correct!";
+		document.getElementById("spanResult").innerHTML = "Absolutely correct!";   
 	    }
 	    else
 	    {
 		modal.style.display = "block";
 		document.getElementById("checkResult").innerHTML = "Incorrect, try harder";
+		document.getElementById("spanResult").innerHTML = "Incorrect, try harder";
 		console.log(hashText);
 	    }
 	    window.onclick = function(event) {
@@ -56,6 +58,6 @@
   		</div>
 	</div>
 	<br><strong>Enter the flag: </strong><input id='plainText' type='text' style="color:black;" /> 
-	<span id="checkResult"></span>
-	<button onclick="checkHash()" style="background-color: #e7e7e7;">Check Flag</button>
+	<span id="spanResult">&nbsp;&nbsp;</span>
+	<button onclick="checkHash()" style="background-color: ##008CBA;">Check Flag</button>
 </div>
