@@ -81,14 +81,14 @@ toc:
 ## => Markdown Enhancements
 ##############################
 ## Mathjax
-mathjax: true
-mathjax_autoNumber: true
+mathjax: false
+mathjax_autoNumber: false
 
 ## Mermaid
-mermaid: true
+mermaid: false
 
 ## Chart
-chart: true
+chart: false
 
 
 ## => Paginate
