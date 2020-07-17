@@ -17,10 +17,4 @@ Wish you luck :sunglasses:
 
 {% include checkflag.html %}
 
-## Task2 
-Since you know the flag, try converting it to hex.  
-<!-- 666c61677b636f6e67726174737d -->
-Yeah yeah, very lame. This is just a test afterall.   
-Just do the task sincerely else the octocat shall punish you :octocat:  
-{% include checkflag.html %}
 
