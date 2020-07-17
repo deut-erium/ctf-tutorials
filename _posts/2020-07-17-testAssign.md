@@ -1,8 +1,5 @@
 ---
-challengeIndex: 0
-sha256hash: 
-- f41f36d7fac9ac1b876be722ad5c2dca2b7fbe7b7896fafde04fc18530485785
-- 122e7f382c8b1e6f9df132542023f46fd60eb46e4f67767c491a9478140d11db
+sha256hash: f41f36d7fac9ac1b876be722ad5c2dca2b7fbe7b7896fafde04fc18530485785
 ---
 
 This is just a test assignment,  
