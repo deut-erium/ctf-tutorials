@@ -1,13 +1,7 @@
 ---
 sha256hash: 
+  - 9489f24b5b7d8db729025b5cee86d948077363b4cf2e2d7cfad4394968275c58
   - f41f36d7fac9ac1b876be722ad5c2dca2b7fbe7b7896fafde04fc18530485785
-  - 4df3c3f68fcc83b27e9d42c90431a72499f17875c81a599b566c9889b9696703
-testlist:
-  - item1
-  - item2
-  - item3
-
-index: 0
 ---
 
 This is just a test assignment,  
@@ -15,16 +9,21 @@ As you can see, this is a static site, so you would not get any points for flag 
 Although you need to solve the challenge to know the flag :godmode:  
 Imagine virtual pats on completing the challenges :trollface:  
 
-## Task1
+## Task1 
+Nothing to do here, just a basic `sanity_check` :stuck_out_tongue:
+{% assign index = 0 %}
+
+{% include checkflag.html %}
+
+## Task2
 Just find the flag (you know where) and submit it to see if its correct.  
 Wish you luck :sunglasses:  
 <!-- inspect element rocks yo flag{congrats} -->
-
-{% include checkflag.html %}
-
 {% assign index = 1 %}
-<!-- bla -->
+
 {% include checkflag.html %}
+
+
 
 
 
