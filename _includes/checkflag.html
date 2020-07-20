@@ -11,15 +11,16 @@
 	    var hashText = md.digest().toHex(); 
 	    if (hashText=='{{page.sha256hash[index]}}')
 	    {
-		document.getElementById('spanResult{{index}}').innerHTML = "Absolutely correct!"; 
+		document.getElementById('spanResult{{index}}').innerHTML = "Absolutely correct! 🥳"; 
 	    }
 	    else
 	    {
-		document.getElementById('spanResult{{index}}').innerHTML = "Incorrect, try harder";
+		document.getElementById('spanResult{{index}}').innerHTML = "Incorrect, try harder 🥺";
 	    }
 	}        
 	</script>
-	<br><strong>Enter the flag: </strong><input id='plainText{{index}}' type='text' style="color:black;" /> 
-	<a class="button button--secondary button--rounded" onclick="checkHash{{index}}()">Check Flag</a><br>
+	<strong>Enter the flag: </strong><input id='plainText{{index}}' type='text' style="color:black;" /> 
+	<a class="button button--secondary button--rounded" onclick="checkHash{{index}}()">Check Flag</a>
+	<br>
 	<div id="spanResult{{index}}">&nbsp;&nbsp;</div>
 </div>
