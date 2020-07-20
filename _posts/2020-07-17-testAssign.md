@@ -6,6 +6,7 @@ testlist:
   - item1
   - item2
   - item3
+ index: 0
 ---
 
 This is just a test assignment,  
@@ -18,10 +19,9 @@ Just find the flag (you know where) and submit it to see if its correct.
 Wish you luck :sunglasses:  
 <!-- inspect element rocks yo flag{congrats} -->
 
-{% increment page.index %}
 {% include checkflag.html %}
 
-{% increment page.index %}
+{% assign page.index = 1 %}
 <!-- bla -->
 {% include checkflag.html %}
 
