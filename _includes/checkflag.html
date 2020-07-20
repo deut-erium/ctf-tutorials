@@ -4,7 +4,7 @@
 	<script type="text/Javascript">
 	function checkHash()
 	   {
- 	    console.log('{{page.testlist}}','{{page.testlist[0]}}', '{{page.testlist[index]}}','{{page.testlist[page.index]}}','{{page.testlist[{{page.index}}]}}' )
+ 	    console.log('{{page.testlist}}','{{page.testlist[0]}}','{{page.testlist[page.index]}}','{{page.testlist['{{page.index}}']}}' )
 	    var plainText = document.getElementById('plainText').value;
 	    var modal = document.getElementById("flagModal");
 	    var md = forge.md.sha256.create();  
@@ -34,10 +34,11 @@
 	</script>
 	<div id="flagModal" class="modal">
   		<div class="modal--show">
-    			<span id="checkResult"></span>
+    			<p id="checkResult"></p>
   		</div>
 	</div>
 	<br><strong>Enter the flag: </strong><input id='plainText' type='text' style="color:black;" /> 
 	<span id="spanResult">&nbsp;&nbsp;</span>
-	<button onclick="checkHash()" style="background-color: ##008CBA;">Check Flag</button>
+	<a class="button button--secondary button--rounded" onclick="checkHash()">Check Flag</a>
+	<!--<button onclick="checkHash()" style="background-color: ##008CBA;">Check Flag</button> -->
 </div>
