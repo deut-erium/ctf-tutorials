@@ -26,6 +26,7 @@
 	<script type="text/Javascript">
 	function checkHash()
 	   {
+ 	    console.log('{{page.testlist}}','{{page.testlist[0]}}')
 	    var plainText = document.getElementById('plainText').value;
 	    var modal = document.getElementById("flagModal");
 	    var md = forge.md.sha256.create();  
