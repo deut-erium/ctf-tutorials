@@ -5,7 +5,7 @@
 	function checkHash{{index}}()
 	   {
  	    console.log('{{page.testlist}}','{{page.testlist[0]}}','{{page.testlist[index]}}' );
-	    var plainText = document.getElementById('plainText{{index}}').value;
+	    var plainText = document.getElementById('plainText{{index}}').value.trim();
 	    var md = forge.md.sha256.create();  
 	    md.start();  
 	    md.update(plainText, "utf8");  
@@ -14,16 +14,32 @@
 	    {
 		document.getElementById('spanResult{{index}}').innerHTML = "Absolutely correct!"; 
 		console.log(hashText,plainText,'{{page.sha256hash[index]}}');
+		document.getElementById("hashText{{index}}").innerHTML = "Correct";
+        	document.getElementById("messagecontent{{index}}").innerHTML = "Awesome Work you did there!";
 	    }
 	    else
 	    {
 		document.getElementById('spanResult{{index}}').innerHTML = "Incorrect, try harder";
 		console.log(hashText,plainText,"{{page.sha256hash[index]}}");
+		document.getElementById("hashText{{index}}").innerHTML = "Incorrect";
+        	document.getElementById("messagecontent{{index}}").innerHTML = "hmmm, something is off, try rechecking your flag or the flag format";
 	    }
 	}        
 	</script>
+	<div class="modal{{index}} fade" id="myModal{{index}}" role="dialog">
+	   <div class="modal-dialog">
+	      <div class="modal-content">
+		<div class="modal-header">
+		  <h4 class="modal-title" id="hashText{{index}}">success status</h4>
+		</div>
+		<div class="modal-body" id="messagecontent{{index}}">
+		  <p>message</p>
+		</div>
+	      </div>
+	    </div>
+	  </div>
 	<br><strong>Enter the flag: </strong><input id='plainText{{index}}' type='text' style="color:black;" /> 
 	<span id="spanResult{{index}}">&nbsp;&nbsp;</span>
-	<a class="button button--secondary button--rounded" onclick="checkHash{{index}}()">Check Flag</a>
-	<!--<button onclick="checkHash()" style="background-color: ##008CBA;">Check Flag</button> -->
+	<a class="button button--secondary button--rounded" onclick="checkHash{{index}}() data-toggle='modal{{index}}' data-target='#myModal{{index}}'">Check Flag</a>
+	
 </div>
