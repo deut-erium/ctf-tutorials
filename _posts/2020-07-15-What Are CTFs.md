@@ -1,8 +1,15 @@
 ---
-disqus: true
+tags: introduction
+aside:
+  toc: true
+sidebar:
+  nav: layouts
+comments: true
+excerpt_separator: <!--more-->
 ---
 
 CTF or [Capture The Flag](https://en.wikipedia.org/wiki/Capture_the_flag#Computer_security) in context of computer security, are special kind of information security competitions which serve as a gamified educational exercise to give participants experience in securing a machine as well as conducting and reacting to sort of attacks found in real world or some (supposedly) fun programming concept otherwise.
+<!--more-->
 
 ## What are Flags which we are capturing?
 Flags are often secret strings hidden in purposefully-vulnerable programs, websites or challenges. The challengers have to steal/hack the flag from the organizers of CTF event (as in Jepoardy format) or from other challengers (attack/defence format). The flags serve as a currency or proof of work for solving a given challenge which one can exchange for points :wink:  
