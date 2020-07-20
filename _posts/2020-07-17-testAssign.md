@@ -18,13 +18,10 @@ Just find the flag (you know where) and submit it to see if its correct.
 Wish you luck :sunglasses:  
 <!-- inspect element rocks yo flag{congrats} -->
 
-{% increment index %}
-{{ index }}
+{% increment page.index %}
 {% include checkflag.html %}
 
-{% increment index %}
-
-{{ index }}
+{% increment page.index %}
 <!-- bla -->
 {% include checkflag.html %}
 
