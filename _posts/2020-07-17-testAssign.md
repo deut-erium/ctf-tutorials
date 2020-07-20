@@ -6,7 +6,7 @@ testlist:
   - item1
   - item2
   - item3
- index: 0
+index: 0
 ---
 
 This is just a test assignment,  
