@@ -1,32 +1,10 @@
 <div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/forge/0.8.2/forge.all.min.js"></script>
-	<style>
-	.modal {
-	  display: none; /* Hidden by default */
-	  position: fixed; /* Stay in place */
-	  z-index: 1; /* Sit on top */
-	  padding-top: 100px; /* Location of the box */
-	  left: 0;
-	  top: 0;
-	  width: 100%; /* Full width */
-	  height: 100%; /* Full height */
-	  overflow: auto; /* Enable scroll if needed */
-	  background-color: rgb(0,0,0); /* Fallback color */
-	  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-	}
-	.modal-content {
-	  background-color: #fefefe;
-	  margin: auto;
-	  padding: 20px;
-	  border: 1px solid #888;
-	  width: 40%;
-	}
-	</style>
 	<script type="text/Javascript">
 	function checkHash()
 	   {
- 	    console.log('{{page.testlist}}','{{page.testlist[0]}}')
+ 	    console.log('{{page.testlist}}','{{page.testlist[0]}}', '{{page.testlist[index]}}','{{page.testlist[page.index]}}','{{page.testlist[{{page.index}}]}}' )
 	    var plainText = document.getElementById('plainText').value;
 	    var modal = document.getElementById("flagModal");
 	    var md = forge.md.sha256.create();  
@@ -55,7 +33,7 @@
 	}        
 	</script>
 	<div id="flagModal" class="modal">
-  		<div class="modal-content">
+  		<div class="modal--show">
     			<span id="checkResult"></span>
   		</div>
 	</div>
