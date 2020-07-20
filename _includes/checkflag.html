@@ -10,20 +10,20 @@
 	    md.start();  
 	    md.update(plainText, "utf8");  
 	    var hashText = md.digest().toHex(); 
-	    if (hashText=="{{page.sha256hash[page.index]}}")
+	    if (hashText=='{{page.sha256hash[page.index]}}')
 	    {
-		document.getElementById("spanResult{{page.index}}").innerHTML = "Absolutely correct!"; 
-		console.log(hashText,plainText,"{{page.sha256hash[page.index]}}");
+		document.getElementById('spanResult{{page.index}}').innerHTML = "Absolutely correct!"; 
+		console.log(hashText,plainText,'{{page.sha256hash[page.index]}}');
 	    }
 	    else
 	    {
-		document.getElementById("spanResult").innerHTML = "Incorrect, try harder";
+		document.getElementById('spanResult{{page.index}}').innerHTML = "Incorrect, try harder";
 		console.log(hashText,plainText,"{{page.sha256hash[page.index]}}");
 	    }
 	}        
 	</script>
 	<br><strong>Enter the flag: </strong><input id='plainText{{page.index}}' type='text' style="color:black;" /> 
 	<span id="spanResult{{page.index}}">&nbsp;&nbsp;</span>
-	<a id="button{{page.index}}" class="button button--secondary button--rounded" onclick="checkHash{{page.index}}()">Check Flag</a>
+	<a class="button button--secondary button--rounded" onclick="checkHash{{page.index}}()">Check Flag</a>
 	<!--<button onclick="checkHash()" style="background-color: ##008CBA;">Check Flag</button> -->
 </div>
