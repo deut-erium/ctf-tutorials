@@ -21,7 +21,7 @@ Wish you luck :sunglasses:
 
 {% include checkflag.html %}
 
-{% assign index = 1 %}
+{% assign page.index = 1 %}
 <!-- bla -->
 {% include checkflag.html %}
 
