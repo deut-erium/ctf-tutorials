@@ -6,6 +6,7 @@ testlist:
   - item1
   - item2
   - item3
+
 index: 0
 ---
 
@@ -21,7 +22,6 @@ Wish you luck :sunglasses:
 
 {% include checkflag.html %}
 
-{% assign page.index = 1 %}
 <!-- bla -->
 {% include checkflag.html %}
 
