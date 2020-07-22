@@ -13,7 +13,6 @@ chart: false
 excerpt_separator: <!--more-->
 key: sqli00001
 ---
-# SQL Injection
 ## What are SQL Queries?
 SQL is a standardized language used to access and manipulate databases to build customizable data views for each user. SQL queries are used to execute commands, such as data retrieval, updates, and record removal. Different SQL elements implement these tasks, e.g., queries using the SELECT statement to retrieve data, based on user-provided parameters.
 
