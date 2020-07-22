@@ -58,9 +58,7 @@ layouts:
       - title:  What are Assigments?
         url:    /posts/2020-07-17-what are assignments
       - title: 
-      ...
   - title:      Resources
-      ...
   - title:      Assignments
     children:
       - title:  What are assignments
