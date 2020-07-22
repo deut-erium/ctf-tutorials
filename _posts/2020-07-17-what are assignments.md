@@ -16,7 +16,9 @@ Assignments are the way to get quick hands on tasks and challenges.
 There will be plenty of hands-on experience through a guided set of static challenges.  
 <!--more-->
 There will be a couple of jeopardy style tasks which you are supposed to do. On completing a task, you will recieve a flag which you can submit in the text box to verify the correctness of you solution.  
-On solving 
+If done correctly, the message `Absolutely correct! 🥳` should pop up. `Incorrect, try harder 🥺` will pop up otherwise. So be careful while submitting.  
+Also note that all the flags would be case sensitive.
+
 This is a statically-hosted site, you would not get any points by solving the challenges, imagine virtual pats on completing a challenge or let us know about it in the comments :smile:
 {:.info}
 
