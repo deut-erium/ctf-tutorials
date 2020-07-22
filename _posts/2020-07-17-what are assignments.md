@@ -9,6 +9,7 @@ aside:
 sidebar:
   nav: layouts
 excerpt_separator: <!--more-->
+author: deuterium
 key: assignment000001
 ---
 
