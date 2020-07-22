@@ -73,8 +73,8 @@ The files required for the task need to be put into [assignments](assignemts) di
 For each task, calculate the sha256 of the flag and put it in the `sha256hash` array in frontmatter.  
 Put the tags
 ```
-{% assign index = 0 %}
-{% include checkflag.html %}
+{{ "{% assign index = 0 " }}%}
+{{ "{% include checkflag.html " }}%}
 ```
 To specify index of the task and include a flag input box!  
 Check out [what are assignments.md](https://github.com/CSEA-IITB/IITBreachers-wiki/blob/master/_posts/2020-07-17-what%20are%20assignments.md) for an example.  
