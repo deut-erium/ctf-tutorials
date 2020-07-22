@@ -4,6 +4,7 @@ aside:
   toc: true
 sidebar:
   nav: layouts
+author: deuterium
 excerpt_separator: <!--more-->
 key: whatarectfs000001
 ---
