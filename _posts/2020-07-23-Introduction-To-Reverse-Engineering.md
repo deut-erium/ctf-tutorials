@@ -41,7 +41,7 @@ The above naming provides you access to the 32 bits associated with every regist
 
 Similarly if you want only 16 bits you will call them as `AX, BX, CX.. ` and so on. To get eight bits you will use `AL, BL, CL..` and so on. The following diagram explains this better:
 
-![registers](/assets/images/reverse/x86-registers.png)
+![registers](/IITBreachers-wiki/assets/images/reverse/x86-registers.png)
 
 For more details on registers go through [this link](https://wiki.skullsecurity.org/index.php?title=Registers)
 The general purpose registers can be used for computation and infact it is only through these registers that you can do operations like addition subtraction. So if you want to say add two numbers stored at two different memory locations you would have to load the values stored there into the registers and then operate and then write these values again into the memory location. We will not be going into specifics of these operations instead we will quickly summarise them below.
@@ -161,7 +161,7 @@ We would need a disassembler to get and investigate the assembly code. Let us us
 Once you have installed IDA Free, you can start working and analysing the code. Let us solve this [CTFLearn challenge](https://ctflearn.com/challenge/379) using IDA.
 
 Download the file and load it into IDA. Keep on clicking next, do not change any options (let IDA decide that it is an ELF for instance!). You should arrive at the following screen:
-![](/assets/images/reverse/ida.png)
+![](/IITBreachers-wiki/assets/images/reverse/ida.png)
 
 If you run the file you observe that you need to enter a pin for this to work. If you enter any random input it will output "PIN Salah!" Clearly we want to find the PIN which gives the other possibility.
 
@@ -169,7 +169,7 @@ The above branches show the other possibility, you want to get "PIN benar!". Obs
 
 So somehow when we enter the wrong PIN `EAX` is set to 0. Observe that there is an instruction called `call cek`. `call` in assembly means that we are calling a function. Double click there to see what the code for the `cek` function is:
 
-![](/assets/images/reverse/cek.png)
+![](/IITBreachers-wiki/assets/images/reverse/cek.png)
 
 One important thing to note is that in reverse engineering never try to analyse everything since a lot of it is generated via the compiler and could be hard to make sense of. Instead try to gain an insight into the structure of how the program is operating.
 
@@ -181,7 +181,7 @@ When is the zero flag set? This happens only when `[rbp+var_4] == eax`. However 
 
 What is this `cs:valid`? Turns out it's just a name given by `IDA` to some value stored in the binary. If we double click this we get the following value data:
 
-![](/assets/images/reverse/valid.png)
+![](/IITBreachers-wiki/assets/images/reverse/valid.png)
 
 Now we haven't seen where our input is getting stored. Turns out it is getting stored in `EDI`. This in general changes but using something called a dynamic disassembler (gdb) we can figure this out (we'll see this in the next tutorial). Even without knowing this we could guess that well the input is stored in `EDI` and as we will see this guess turns out to be right.
 
@@ -189,7 +189,7 @@ So if our input is equal to the value `51615h` (which is given in hex) we will g
 
 Let us input this and see what wheter this is correct or not.
 
-![](/assets/images/reverse/final.png)
+![](/IITBreachers-wiki/assets/images/reverse/final.png)
 
 And indeed we get "PIN benar!" This is the PIN and we found the PIN using some clever disassembly and investigative skills!
 
