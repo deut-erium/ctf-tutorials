@@ -14,6 +14,10 @@ excerpt_separator: <!--more-->
 key: web00001
 ---
 
+How is private information leaked from social networking sites? How can someone's bank account get compromised by just clicking on a link in an email? Why are we advised to not use the same password on different sites? What are those annoying "accept cookie banners" that pop up every time? How do characters in movies get into their school's database to change their grade? 
+
+If you've ever encountered any of the above questions and wanted to learn how these things happen, we've got you covered. In these tutorials we will be discussing about common vulnerabilities in web applications and how can those be exploited by attackers. But these tutorials cover a lot more than that. They will help you gain a deeper understanding into how stuff works, and if you are a developer, will help you to make more robust applications! 
+
 ## What does a vulnerability mean?
 "A website vulnerability is a weakness or misconfiguration in a website or web application code that allows an attacker to gain some level of control of the site, and possibly the hosting server."
 
@@ -21,14 +25,41 @@ key: web00001
 There are different types of vulnerabilities, targetting different functions of a web application like gaining access to the database of a website revealing personal information of users, running a script in the background to access data from your computer, or a script that transfers money from your bank account!
 
 ### Types of Vulnerabilities
-Different kinds of attacks have different purposes and can be categorized as follows-
+Different kinds of attacks are possible on web applications, but here we'll be listing the top 10 according to the OWASP(Open Web Application Security Project, or OWASP, is an international non-profit organization dedicated to web application security.) report. 
 
-* **Insecure Deserialization -** Many websites have some hidden content in them, which is only visible once you verify that you have appropriate priviledges. For example, you visit to an email website, you cannot see your emails unless you login. When you log in, the system generates an *object* that contains information on what content should be shown to you (like if you are logging in with your credentials,you can only view you emails and  not your friends'). Serialization vulnerabilities tamper with the generated *object*, to allow you to see content you are not authorised to. <br>
-Another example where this applies is admin portal on websites. So there are many websites that have an admin portal to manage the data associated with the site. If you tamper with the *object* as described above, you can even gain admin access to a website!
+* **[Injection](sqli.md)-** Injection attacks happen when untrusted data is sent to a code interpreter through a form input or some other data submission to a web application. For example, an attacker could enter SQL database code into a form that expects a plaintext username. If that form input is not properly secured, this would result in that SQL code being executed. This is known as an SQL injection attack.
+Injection attacks can be prevented by validating and/or sanitizing user-submitted data. (Validation means rejecting suspicious-looking data, while sanitization refers to cleaning up the suspicious-looking parts of the data.) In addition, a database admin can set controls to minimize the amount of information an injection attack can expose.
 
-* **SQL Injection-** A lot of websites have database in the backend. What happens is that when you go to a website that has an input field, the data you enter is sent to the server, an *SQL query* is run, and the result is returned back. But what if the input you enter is an *SQL command*? Chances are, the backend program runs your input as a query on the database and the result you receive is all of the data which is stored in the database. To get more idea about SQL Injection, see https://www.youtube.com/watch?v=_jKylhJtPmI . [This](https://www.youtube.com/watch?v=J6v_W-LFK1c) video shows how SQL Injection works. 
+* **[Broken Authentication](authentication.md)-** Vulnerabilities in authentication (login) systems can give attackers access to user accounts and even the ability to compromise an entire system using an admin account. For example, an attacker can take a list containing thousands of known username/password combinations obtained during a data breach and use a script to try all those combinations on a login system to see if there are any that work. Not even this, there are potential vulnerabilities in 2 Factor Authentication as well!
 
-* **Cross Site Scripting (XSS)-** Cross site scripting runs unintended JavaScript code on the website. This can be used to steal valuable user data or show spam content to the user. To get more idea about XSS, see https://www.youtube.com/watch?v=L5l9lSnNMxg . [This](https://www.youtube.com/watch?v=9kaihe5m3Lk) video demonstrates XSS quite nicely.
+* **Sensitive Data Exposure-** If web applications don’t protect sensitive data such as financial information and passwords, attackers can gain access to that data and sellor utilize it for nefarious purposes. One popular method for stealing sensitive information is using a [man-in-the-middle attack](https://www.cloudflare.com/learning/security/threats/man-in-the-middle-attack/). So, the applications generally store this sensitive data in encrypted format. 
 
-* **Cross Site Request Forgery (CSRF)-** In this kind of attack, the attacker causes the victim user to carry out an action unintentionally.  For example, this might be to change the email address on their account, to change their password, or to make a funds transfer. Depending on the nature of the action, the attacker might be able to gain full control over the user's account. To get more idea about CSRF, do watch https://www.youtube.com/watch?v=vRBihr41JTo or https://www.youtube.com/watch?v=eWEgUcHPle0 .
+* **[XML External Entities (XXE)](xxe.md)-** XML external entity injection (also known as XXE) is a web security vulnerability that allows an attacker to interfere with an application's processing of XML data. It often allows an attacker to view files on the application server filesystem, and to interact with any backend or external systems that the application itself can access.
+The best ways to prevent XEE attacks are to have web applications accept a less complex type of data, such as JSON, or at the very least to patch XML parsers and disable the use of external entities (An ‘external entity’ in this context refers to a storage unit, such as a hard drive.) in an XML application.
+
+
+* **Broken Access Control-** Access control refers a system that controls access to information or functionality. Broken access controls allow attackers to bypass authorization and perform tasks as though they were privileged users such as administrators. For example a web application could allow a user to change which account they are logged in as simply by changing part of a url, without any other verification.
+
+* **Security Misconfiguration-** Security misconfiguration is the most common vulnerability, and is often the result of using default configurations or displaying excessively verbose errors. For instance, an application could show a user overly-descriptive errors which may reveal vulnerabilities in the application. This can be mitigated by removing any unused features in the code and ensuring that error messages are more general (like Internal Server Error or Bad Request).
+
+* **[Cross-Site Scripting](xss.md)-** Cross-site scripting vulnerabilities occur when web applications allow users to add custom code into a url path or onto a website that will be seen by other users. This vulnerability can be exploited to run malicious JavaScript code on a victim’s browser. For example, an attacker could send an email to a victim that appears to be from a trusted bank, with a link to that bank’s website. This link could have some malicious JavaScript code tagged onto the end of the url. If the bank’s site is not properly protected against cross-site scripting, then that malicious code will be run in the victim’s web browser when they click on the link.
+Mitigation strategies for cross-site scripting include escaping untrusted HTTP requests as well as validating and/or sanitizing user-generated content. Using modern web development frameworks like ReactJS and Ruby on Rails also provides some built-in cross-site scripting protection.
+
+* **[Insecure Deserialization](serialization.md)-** This threat targets the many web applications which frequently serialize and deserialize data. Serialization means taking objects from the application code and converting them into a format that can be used for another purpose, such as storing the data to disk or streaming it. Deserialization is just the opposite: converting serialized data back into objects the application can use. Serialization is sort of like packing furniture away into boxes before a move, and deserialization is like unpacking the boxes and assembling the furniture after the move. An insecure deserialization attack is like having the movers tamper with the contents of the boxes before they are unpacked.
+
+* **Using Components With Known Vulnerabilities-** Many modern web developers use components such as libraries and frameworks in their web applications. These components are pieces of software that help developers avoid redundant work and provide needed functionality; common example include front-end frameworks like React and smaller libraries that used to add share icons or a/b testing. Some attackers look for vulnerabilities in these components which they can then use to orchestrate attacks. Some of the more popular components are used on hundreds of thousands of websites; an attacker finding a security hole in one of these components could leave hundreds of thousands of sites vulnerable to exploit.
+
+* **Insufficient Logging And Monitoring-** Many web applications are not taking enough steps to detect data breaches. The average discovery time for a breach is around 200 days after it has happened. This gives attackers a lot of time to cause damage before there is any response. OWASP recommends that web developers should implement logging and monitoring as well as incident response plans to ensure that they are made aware of attacks on their applications.
+
+Sources:
+* https://www.cloudflare.com/learning/security/threats/owasp-top-10/
+* https://portswigger.net/web-security/xxe
+
+
+
+
+
+
+
+
 
