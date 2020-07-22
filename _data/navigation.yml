@@ -52,15 +52,15 @@ layouts:
   - title:      Introduction
     children:
       - title:  Welcome
-        url:    /posts/2020/07/15/welcome
+        url:    /posts/2020/07/15/welcome.html
       - title:  What are CTFs?
-        url:    /posts/2020/07/15/What Are CTFs
+        url:    /posts/2020/07/15/What-Are-CTFs.html
       - title:  What are Assigments?
-        url:    /posts/2020/07/17/what are assignments
+        url:    /posts/2020/07/17/what-are-assignments.html
       - title: 
   - title:      Resources
   - title:      Assignments
     children:
       - title:  What are assignments
-        url:    /posts/2020/07/17/what are assignments
+        url:    /posts/2020/07/17/what-are-assignments.html
 
