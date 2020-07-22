@@ -18,11 +18,11 @@
 ##############################
 text_skin: "dark" # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: "tomorrow-night-bright" # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
-url     : "https://deut-erium.github.io"
-baseurl : "/ctf-tutorials"
-title   : Tutorials
+url     : "https://csea-iitb.github.io"
+baseurl : "/IITBreachers-wiki"
+title   : CTF-wiki
 description: > # this means to ignore newlines until "Language & timezone"
-  Learn about the necessary Evil
+  CTF-wiki of IITBreachers
 
 
 ## => Language and Timezone
@@ -55,7 +55,7 @@ author:
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: deut-erium/ctf-tutorials
+repository: CSEA-IITB/IITBreachers-wiki
 repository_tree: master
 
 
