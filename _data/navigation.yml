@@ -59,33 +59,9 @@ layouts:
         url:    /2038/07/17/what-are-assignments.html
       - title:  Contribute
         url:    /2037/01/01/contributions.html
-  - title:      Resources
+  - title:      Cryptography
     children:   
-      - title:  Reverse Engineering
-        url:    /archive.html?tag=reverse-engineering
-      - title: Introduction To Reverse Engineering
-        url:   /2020/07/23/Introduction-To-Reverse-Engineering.html
-      - title:  Web
-        url:    /archive.html?tag=web
-      - title: Vulnerabilities in Web Applications
-        url:   /2020/07/22/Web-Vulnerabilities.html
-      - title: Vulnerabilites in Authentication Mechanisms
-        url:   /2020/07/22/authentication.html
-      - title: XXE Injection
-        url:   /2020/07/22/XXE.html
-      - title: Cross Site Scription (XSS)
-        url:   /2020/07/22/XSS.html
-      - title: SQL Injection
-        url:   /2020/07/22/Sql-injections.html
-      - title: Insecure Deserialization
-        url:   /2020/07/22/Serialization-and-Deserialization.html
-      - title: Cross Site Request Forgery (CSRF)
-        url:   /2020/07/22/CSRF.html
-      - title: Common CSRF vulnerabilities
-        url:   /2020/07/22/CSRF-Vulnerabilities.html
-      - title:  Cryptography
-      - title:  Binary Exploitation 
-        url: /2020/07/23/Binary-Exploitation.html
+      - title:  cryptography
   - title:      Assignments
     children:
       - title:  What are assignments
