@@ -130,7 +130,7 @@ In practice, it is a given that some users will forget their password, so it is 
 Generally, when you reset a password, you receive an email with a new temporary password which is valid for a short period of time. This approach is susceptible to man in the middle attacks, so is vulnerable. Also, amny users sync their emails across multiple devices, transmitting sensitive data over insecure channels.
 
 ### Resetting passwords using a URL
-A more robust method of resetting passwords is to send a unique URL to users that takes them to a password reset page. Less secure implementations of this method use a URL with an easily guessable parameter to identify which account is being reset, for example: ` http://vulnerable-website.com/reset-password?user=victim-user`.
+A more robust method of resetting passwords is to send a unique URL to users that takes them to a password reset page. Less secure implementations of this method use a URL with an easily guessable parameter to identify which account is being reset, for example: `http://vulnerable-website.com/reset-password?user=victim-user`.
 In this example, an attacker could change the user parameter to refer to any username they have identified. They would then be taken straight to a page where they can potentially set a new password for this arbitrary user. 
 
 ### Password reset poisoning
