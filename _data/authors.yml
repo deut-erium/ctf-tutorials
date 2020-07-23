@@ -1,0 +1,94 @@
+deuterium: 
+  type      : "person"
+  name      : deuterium
+  url       : https://deut-erium.github.io
+  avatar    : https://github.com/deut-erium/deut-erium.github.io/blob/master/Circle-limit-IV.jpg?raw=1
+  bio       : Some words for the nerds
+  email     : farziemailid69@gmail.com
+  facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
+  twitter   : 0xdeuterium # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
+  weibo     : # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/user_id/profile?...
+  googleplus: # "user_id"   the last part of your profile url, e.g. https://plus.google.com/u/0/user_id
+  telegram  : # "user_name" the last part of your profile url, e.g. https://t.me/user_name
+  medium    : # "user_name" the last part of your profile url, e.g. https://medium.com/user_name
+  zhihu     : # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
+  douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
+  linkedin  : himanshu-sheoran-ab047b152 # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
+  github    : deut-erium # "user_name" the last part of your profile url, e.g. https://github.com/user_name
+  npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
+
+0sidharth:
+  type      : "person"
+  name      : 0sidharth
+  url       : https://github.com/0sidharth/
+  avatar    :
+  bio       : Some words for the nerds
+  email     : farziemailid96@gmail.com
+  facebook  : blankhhh
+  twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
+  weibo     : # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/user_id/profile?...
+  googleplus: # "user_id"   the last part of your profile url, e.g. https://plus.google.com/u/0/user_id
+  telegram  : # "user_name" the last part of your profile url, e.g. https://t.me/user_name
+  medium    : # "user_name" the last part of your profile url, e.g. https://medium.com/user_name
+  zhihu     : # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
+  douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
+  linkedin  : sidharth-mundhra-9708b0194 # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
+  github    : 0sidharth # "user_name" the last part of your profile url, e.g. https://github.com/user_name
+  npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
+
+gurnoor6:
+  type      : "person"
+  name      : gurnoor6
+  url       : https://github.com/gurnoor6/
+  avatar    :
+  bio       : ---404---
+  email     : farziemailid420@gmail.com
+  facebook  : #
+  twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
+  weibo     : # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/user_id/profile?...
+  googleplus: # "user_id"   the last part of your profile url, e.g. https://plus.google.com/u/0/user_id
+  telegram  : # "user_name" the last part of your profile url, e.g. https://t.me/user_name
+  medium    : # "user_name" the last part of your profile url, e.g. https://medium.com/user_name
+  zhihu     : # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
+  douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
+  linkedin  : # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
+  github    : gurnoor6 # "user_name" the last part of your profile url, e.g. https://github.com/user_name
+  npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
+
+geekpradd:
+  type      : "person"
+  name      : Pradipta Bora
+  url       : https://geekpradd.github.io/
+  avatar    : https://avatars1.githubusercontent.com/u/7867775?s=460&u=e09996098731c927f8d2dabc09ec66d6fe0f6c8b&v=4
+  bio       : nothing to see here
+  email     : geekpradd@gmail.com
+  facebook  : #
+  twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
+  weibo     : # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/user_id/profile?...
+  googleplus: # "user_id"   the last part of your profile url, e.g. https://plus.google.com/u/0/user_id
+  telegram  : # "user_name" the last part of your profile url, e.g. https://t.me/user_name
+  medium    : # "user_name" the last part of your profile url, e.g. https://medium.com/user_name
+  zhihu     : # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
+  douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
+  linkedin  : # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
+  github    : geekpradd # "user_name" the last part of your profile url, e.g. https://github.com/user_name
+  npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
+
+jsahil730: 
+  type      : "person"
+  name      : jsahil730
+  url       : https://www.cse.iitb.ac.in/~sahiljain
+  avatar    : https://avatars0.githubusercontent.com/u/49490887?s=400&u=d48795d008f69f068af2540944f57c823de8d4c4&v=4
+  bio       : You're looking at a weeb
+  email     : jsahil730@gmail.com
+  facebook  : sahilj730# "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
+  twitter   : # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
+  weibo     : # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/user_id/profile?...
+  googleplus: # "user_id"   the last part of your profile url, e.g. https://plus.google.com/u/0/user_id
+  telegram  : # "user_name" the last part of your profile url, e.g. https://t.me/user_name
+  medium    : # "user_name" the last part of your profile url, e.g. https://medium.com/user_name
+  zhihu     : # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
+  douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
+  linkedin  : sahil-jain-a637b0190 # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
+  github    : jsahil730 # "user_name" the last part of your profile url, e.g. https://github.com/user_name
+  npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name

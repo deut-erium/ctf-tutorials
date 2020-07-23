@@ -1,2 +1,2 @@
-Nothing to see here sir/mam.  
-Kindly move on to [https://deut-erium.github.io/ctf-tutorials/](https://deut-erium.github.io/ctf-tutorials/)
+Nothing to see here,  
+Kindly move on to [https://csea-iitb.github.io/IITBreachers-wiki/](https://csea-iitb.github.io/IITBreachers-wiki/)

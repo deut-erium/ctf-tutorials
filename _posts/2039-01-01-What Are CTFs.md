@@ -1,11 +1,12 @@
 ---
-tags: introduction, ctf
+tags: introduction ctf
 aside:
   toc: true
 sidebar:
   nav: layouts
+author: deuterium
 excerpt_separator: <!--more-->
-key: whatarectfs0001
+key: whatarectfs000001
 ---
 
 CTF or [Capture The Flag](https://en.wikipedia.org/wiki/Capture_the_flag#Computer_security) in context of computer security, are special kind of information security competitions which serve as a gamified educational exercise to give participants experience in securing a machine as well as conducting and reacting to sort of attacks found in real world or some (supposedly) fun programming concept otherwise.
@@ -81,3 +82,8 @@ Rest is up to participants' creativity! Be it simply searching through game file
 
 ### Programming?
 CTFs directly or indirectly involve a lot of programming, scripting and automation tasks. Be it repeatedly requesting a website, interacting with a socket server, some cool mathematical game or puzzle or any other generic task which can take years by hand!  
+
+For more information check out this detailed video  
+
+<div>{%- include extensions/youtube.html id='9WhQUItNNMw' -%}</div>
+
