@@ -141,6 +141,6 @@ Typically what happens is that when you click on the link for resetting the pass
 
 
 
-**P.S.-** The material has been taken from [here](https://portswigger.net/web-security/authentication). So if you wish to learn more about any of the above sections or want to gain hands on experience with such attacks, do check it out!! 
+`P.S.-`{:.info}The material has been taken from [here](https://portswigger.net/web-security/authentication). So if you wish to learn more about any of the above sections or want to gain hands on experience with such attacks, do check it out!! 
 
 
