@@ -10,7 +10,7 @@
   {%- assign _sorted_list = _sorted_list | sort: 'order' | sort: 'date' -%}
 {%- endif -%}
 {%- if include.reverse -%}
-  {%- assign _sorted_list = _sorted_list | reverse -%}
+  {%- assign _sorted_list = _sorted_list | sort: 'order' | reverse -%}
 {%- endif -%}
 
 {%- if include.type == 'item' -%}
