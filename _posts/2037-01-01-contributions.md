@@ -17,20 +17,20 @@ We aim to build an awesome cybersecurity community, and for a community we requi
 
 ## Contributing as a collaborator
 This repository uses jekyll theme [TeXt](https://tianqi.name/jekyll-TeXt-theme/docs/en/quick-start), check out the documentation for features and syntax.  
-All the posts are stored in [_posts](https://github.com/CSEA-IITB/IITBreachers-wiki/tree/master/_posts) directory, creating a file `YYYY-MM-DD-name.md` creates a url `/YYYY/MM/DD/name.html` in the github pages.  
+All the posts are stored in [_posts](../_posts) directory, creating a file `YYYY-MM-DD-name.md` creates a url `/YYYY/MM/DD/name.html` in the github pages.  
 To create a new post, just create a new file of the specified format.
 
 ### Not a collaborator?
 Create a fork and issue a pull request with the repository. Make sure the branch you are working on is updated with the master branch. If you feel you would be a regular contributor, just feel free to let us know so that we can add you as collaborator! 
 
 ### Not sure if you want to publish directly?
-Create the same file with specified format in [_drafts](https://github.com/CSEA-IITB/IITBreachers-wiki/tree/master/_drafts) (create if directory not available)
+Create the same file with specified format in [_drafts](../_drafts) (create if directory not available)
 
 ### Showcase your work
 You can showcase your work by having an author badge at the bottom which can be configured to display your profile (name, bio, github, twitter, linkedin etc).
 Just navigate to [_data/authors.yml](_data/authors.yml) and append your details (take hints from pre existing author details).
 
-> Note: Undesired files (not to be shown on the website) or paths should be added in the `exclude` variable in [_config.yml](https://github.com/CSEA-IITB/IITBreachers-wiki/tree/master/_config.yml)
+> Note: Undesired files (not to be shown on the website) or paths should be added in the `exclude` variable in [_config.yml](../_config.yml)
 
 ## [Front-matter](https://jekyllrb.com/docs/front-matter/)
 Each post page has a beginning element called frontmatter which is enclosed in `---`  
@@ -91,7 +91,7 @@ Put the tags
 {{ "{% include checkflag.html " }}%}
 ```
 To specify index of the task and include a flag input box!  
-Check out [what are assignments.md](https://github.com/CSEA-IITB/IITBreachers-wiki/blob/master/_posts/2020-07-17-what%20are%20assignments.md) for an example.  
+Check out [what are assignments.md](https://github.com/deut-erium/ctf-tutorials/tree/master/_posts/2020-07-17-what%20are%20assignments.md) for an example.  
 
 Well thats all it takes to contribute and publish your article :smile:  
 Expecting cool contributions! Who knows it may be your shot to learn writing and enhance your communication :wink:  
