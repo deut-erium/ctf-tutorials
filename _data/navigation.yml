@@ -62,31 +62,29 @@ layouts:
   - title:      Resources
     children:   
       - title:  Reverse Engineering
-        children:  
-          - title: Introduction To Reverse Engineering
-            url:   /2020/07/23/Introduction-To-Reverse-Engineering.html
+        url:    /archive.html?tag=reverse-engineering
+      - title: Introduction To Reverse Engineering
+        url:   /2020/07/23/Introduction-To-Reverse-Engineering.html
       - title:  Web
-        children:  
-          - title: Vulnerabilities in Web Applications
-            url:   /2020/07/22/Web-Vulnerabilities.html
-          - title: Vulnerabilites in Authentication Mechanisms
-            url:   /2020/07/22/authentication.html
-          - title: XXE Injection
-            url:   /2020/07/22/XXE.html
-          - title: Cross Site Scription (XSS)
-            url:   /2020/07/22/XSS.html
-          - title: SQL Injection
-            url:   /2020/07/22/Sql-injections.html
-          - title: Insecure Deserialization
-            url:   /2020/07/22/Serialization-and-Deserialization.html
-          - title: Cross Site Request Forgery (CSRF)
-            url:   /2020/07/22/CSRF.html
-          - title: Common CSRF vulnerabilities
-            url:   /2020/07/22/CSRF-Vulnerabilities.html
+        url:    /archive.html?tag=web
+      - title: Vulnerabilities in Web Applications
+        url:   /2020/07/22/Web-Vulnerabilities.html
+      - title: Vulnerabilites in Authentication Mechanisms
+        url:   /2020/07/22/authentication.html
+      - title: XXE Injection
+        url:   /2020/07/22/XXE.html
+      - title: Cross Site Scription (XSS)
+        url:   /2020/07/22/XSS.html
+      - title: SQL Injection
+        url:   /2020/07/22/Sql-injections.html
+      - title: Insecure Deserialization
+        url:   /2020/07/22/Serialization-and-Deserialization.html
+      - title: Cross Site Request Forgery (CSRF)
+        url:   /2020/07/22/CSRF.html
+      - title: Common CSRF vulnerabilities
+        url:   /2020/07/22/CSRF-Vulnerabilities.html
       - title:  Cryptography
-        children:
-      - title:  Binary Exploitation
-        children: 
+      - title:  Binary Exploitation 
   - title:      Assignments
     children:
       - title:  What are assignments
