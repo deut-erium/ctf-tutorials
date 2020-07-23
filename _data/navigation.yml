@@ -85,6 +85,7 @@ layouts:
         url:   /2020/07/22/CSRF-Vulnerabilities.html
       - title:  Cryptography
       - title:  Binary Exploitation 
+        url: /2020/07/23/Binary-Exploitation.html
   - title:      Assignments
     children:
       - title:  What are assignments
