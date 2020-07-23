@@ -52,15 +52,43 @@ layouts:
   - title:      Introduction
     children:
       - title:  Welcome
-        url:    /2020/07/15/welcome.html
+        url:    /2040/01/01/welcome.html
       - title:  What are CTFs?
-        url:    /2020/07/15/What-Are-CTFs.html
+        url:    /2039/01/01/What-Are-CTFs.html
       - title:  What are Assigments?
-        url:    /2020/07/17/what-are-assignments.html
-      - title: 
+        url:    /2038/07/17/what-are-assignments.html
+      - title:  Contribute
+        url:    /2037/01/01/contributions.html
   - title:      Resources
+    children:   
+      - title:  Reverse Engineering
+        children:  
+          - title: Introduction To Reverse Engineering
+            url:   /2020/07/23/Introduction-To-Reverse-Engineering.html
+      - title:  Web
+        children:  
+          - title: Vulnerabilities in Web Applications
+            url:   /2020/07/22/Web-Vulnerabilities.html
+          - title: Vulnerabilites in Authentication Mechanisms
+            url:   /2020/07/22/authentication.html
+          - title: XXE Injection
+            url:   /2020/07/22/XXE.html
+          - title: Cross Site Scription (XSS)
+            url:   /2020/07/22/XSS.html
+          - title: SQL Injection
+            url:   /2020/07/22/Sql-injections.html
+          - title: Insecure Deserialization
+            url:   /2020/07/22/Serialization-and-Deserialization.html
+          - title: Cross Site Request Forgery (CSRF)
+            url:   /2020/07/22/CSRF.html
+          - title: Common CSRF vulnerabilities
+            url:   /2020/07/22/CSRF-Vulnerabilities.html
+      - title:  Cryptography
+        children:
+      - title:  Binary Exploitation
+        children: 
   - title:      Assignments
     children:
       - title:  What are assignments
-        url:    /2020/07/17/what-are-assignments.html
+        url:    /2038/07/17/what-are-assignments.html
 
