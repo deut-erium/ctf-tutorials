@@ -33,30 +33,16 @@ sidebar:
 ---
 
 
-Welcome to ctf-wiki and assignments page of [CSE Cybersecurity Club, IIT Bombay](https://www.facebook.com/groups/csec.iitb)  
-<!--more-->
-We are a bunch of cybersecurity enthusiasts who actively play Capture the Flag competitions under team name [IITBreachers](https://ctftime.org/team/81901)  
-We want to spread our unconditional love towards cybersecurity through various tutorials, assignemnts, challenges and most importantly by participating in CTFs together.  
+All this is about creating a tutorial which brings front the power of programming in solving ctf tasks.
+I aim to build upon an intuition with which one can solve CTF tasks with programming without overly relying on online tools and tools in general.
+The only tool we need is Python and its always amusing interpreter!
 
-## Dont know where to begin?
-We got you covered!  
-There will be enough of
-- Tutorials
-- Internal hosted CTFs
-- Assignments
-- Participation in international CTFs
-- Other sessions and events :sunglasses:
-Move out to relevant sections or search the relevant tags.  
+## What kind of content will be there?
+Anything! although I am more inclined towards cryptography (and I want to show a point that it is beyond stupid ciphers and cracking hashes), the content would be aimed towards more or less towards general scripting/programming for CTF challenges :smile:
 
-## Seek discussions?
-Join our dedicated [discord server](https://discord.gg/VVJN73w) for awesome discussions, general chat and participating with us in CTFs :smiley:
+## What if you get stuck?
+Always feel free to DM(direct message) on [discord](https://discord.com/new), Username: deuterium#1689.
+Or any other convenient medium of choice.
 
-## Suggestions
-If you have any suggestions about the content, some cool assignment to propose or some more content to add, we got you covered!  
-Just submit your proposal in the comments or ping some admin on the discord or a pull request on the github repository.  
-
-## Feedback
-Feel free to comment and react below and feedback/constructive criticism is always welcome and appreciated, since thats what all ethical hacking about, finding flaws and correcting them. 
-
-**HACK THE PLANET**
+HACK THE PLANET :metal: :metal: :metal:
 
