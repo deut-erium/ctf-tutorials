@@ -52,18 +52,18 @@ layouts:
   - title:      Introduction
     children:
       - title:  Welcome
-        url:    /2040/01/01/welcome.html
+        url:    /2021/07/04/welcome.html
       - title:  What are CTFs?
-        url:    /2039/01/01/What-Are-CTFs.html
+        url:    /2021/04/04/What-Are-CTFs.html
       - title:  What are Assigments?
-        url:    /2038/07/17/what-are-assignments.html
+        url:    /2021/07/04/what-are-assignments.html
       - title:  Contribute
-        url:    /2037/01/01/contributions.html
+        url:    /2021/04/04/contributions.html
   - title:      Cryptography
     children:   
       - title:  cryptography
   - title:      Assignments
     children:
       - title:  What are assignments
-        url:    /2038/07/17/what-are-assignments.html
+        url:    /2021/07/04/what-are-assignments.html
 
