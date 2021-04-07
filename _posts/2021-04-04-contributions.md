@@ -91,9 +91,9 @@ Put the tags
 {{ "{% include checkflag.html " }}%}
 ```
 To specify index of the task and include a flag input box!  
-Check out [what are assignments.md](https://github.com/CSEA-IITB/IITBreachers-wiki/blob/master/_posts/2020-07-17-what%20are%20assignments.md) for an example.  
+Check out [what are assignments.md](https://github.com/deut-erium/ctf-tutorials/blob/master/_posts/2021-07-04-what%20are%20assignments.md) for an example.  
 
 Well thats all it takes to contribute and publish your article :smile:  
 Expecting cool contributions! Who knows it may be your shot to learn writing and enhance your communication :wink:  
 
-Let us know if something is missing or unclear
+Let me know if something is missing or unclear
