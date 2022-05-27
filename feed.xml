@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://deut-erium.github.io/ctf-tutorials/ctf-tutorials/feed.xml" rel="self" type="application/atom+xml" /><link href="https://deut-erium.github.io/ctf-tutorials/ctf-tutorials/" rel="alternate" type="text/html" hreflang="en" /><updated>2022-05-28T03:30:04+05:30</updated><id>https://deut-erium.github.io/ctf-tutorials/ctf-tutorials/feed.xml</id><title type="html">Blog on CTFs</title><subtitle>This blog is about CTFs in general hopefully covering cryptography, SAT/SMT solvers programming, python etc.
+</subtitle><author><name>deuterium</name><email>himanshuthesheoran@gmail.com</email></author><entry><title type="html">What Are Assignments</title><link href="https://deut-erium.github.io/ctf-tutorials/ctf-tutorials/2021/07/04/what-are-assignments.html" rel="alternate" type="text/html" title="What Are Assignments" /><published>2021-07-04T00:00:00+05:30</published><updated>2021-07-04T00:00:00+05:30</updated><id>https://deut-erium.github.io/ctf-tutorials/ctf-tutorials/2021/07/04/what%20are%20assignments</id><content type="html" xml:base="https://deut-erium.github.io/ctf-tutorials/ctf-tutorials/2021/07/04/what-are-assignments.html"><![CDATA[<p>Assignments are the way to get quick hands on tasks and challenges.<br />
+There will be plenty of hands-on experience through a guided set of static challenges.<br />
+<!--more-->
+There will be a couple of jeopardy style tasks which you are supposed to do. On completing a task, you will recieve a flag which you can submit in the text box to verify the correctness of you solution.<br />
+If done correctly, the message <code class="language-plaintext highlighter-rouge">Absolutely correct! 🥳</code> should pop up. <code class="language-plaintext highlighter-rouge">Incorrect, try harder 🥺</code> will pop up otherwise. So be careful while submitting.<br />
+Also note that all the flags would be case sensitive.</p>
+
+<p class="info">This is a statically-hosted site, you would not get any points by solving the challenges, imagine virtual pats on completing a challenge or let me know about it on discord :smile:</p>
+
+<p>Now its time for you to check out your first task!</p>
+
+<h2 id="task1">Task1</h2>
+<p>This is just a sample task depicting the flag format i.e. what would a flag look like.<br />
+Go on and paste <code class="language-plaintext highlighter-rouge">flag{th15_15_wh47_4_54mpl3_fl46_l00k5_l1k3!!}</code> into the text box below. You should see the confirmation if you did it correctly.</p>
+
+<div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/forge/0.8.2/forge.all.min.js"></script>
+    <script type="text/Javascript">
+	function checkHash0()
+	   {
+	    var plainText = document.getElementById('plainText0').value.trim();
+	    var md = forge.md.sha256.create();  
+	    md.start();  
+	    md.update(plainText, "utf8");  
+	    var hashText = md.digest().toHex(); 
+	    if (hashText=='ac4ee365e333646bbe4b73dae90dc8e86963938aefdae2b66939d3df00e4ea64')
+	    {
+		document.getElementById('spanResult0').innerHTML = "Absolutely correct! 🥳"; 
+	    }
+	    else
+	    {
+		document.getElementById('spanResult0').innerHTML = "Incorrect, try harder 🥺";
+	    }
+	}        
+	</script>
+	<strong>Enter the flag: </strong><input id="plainText0" type="text" style="color:black;" /> 
+	<a class="button button--secondary button--rounded" onclick="checkHash0()">Check Flag</a>
+	<br />
+	<div id="spanResult0">&nbsp;&nbsp;</div>
+</div>
+
+<h2 id="task2">Task2</h2>
+<p>There can be often files associated to an assignment. They will be provided either as a <a href="https://raw.githubusercontent.com/deut-erium/ctf-tutorials/master/assigments/what%20are%20assignments/task2.txt">download link</a> or alternatively could be found at corresponding assignment in the <a href="https://github.com/deut-erium/ctf-tutorials/tree/master/assigments">github repository</a><br />
+Go on submit the second flag!</p>
+
+<div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/forge/0.8.2/forge.all.min.js"></script>
+    <script type="text/Javascript">
+	function checkHash1()
+	   {
+	    var plainText = document.getElementById('plainText1').value.trim();
+	    var md = forge.md.sha256.create();  
+	    md.start();  
+	    md.update(plainText, "utf8");  
+	    var hashText = md.digest().toHex(); 
+	    if (hashText=='4c5db009cef8181649d705e96a3f2c2bbad000b08547a9302b929f9ee700cf05')
+	    {
+		document.getElementById('spanResult1').innerHTML = "Absolutely correct! 🥳"; 
+	    }
+	    else
+	    {
+		document.getElementById('spanResult1').innerHTML = "Incorrect, try harder 🥺";
+	    }
+	}        
+	</script>
+	<strong>Enter the flag: </strong><input id="plainText1" type="text" style="color:black;" /> 
+	<a class="button button--secondary button--rounded" onclick="checkHash1()">Check Flag</a>
+	<br />
+	<div id="spanResult1">&nbsp;&nbsp;</div>
+</div>
+
+<h2 id="task3">Task3</h2>
+<p>Have you stalked me enough?<br />
+I bet you didn’t, better go to my <a href="https://github.com/deut-erium">github profile</a> to find the flag :wink:</p>
+
+<div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/forge/0.8.2/forge.all.min.js"></script>
+    <script type="text/Javascript">
+	function checkHash2()
+	   {
+	    var plainText = document.getElementById('plainText2').value.trim();
+	    var md = forge.md.sha256.create();  
+	    md.start();  
+	    md.update(plainText, "utf8");  
+	    var hashText = md.digest().toHex(); 
+	    if (hashText=='a1a6abb6865f7b5bc0fd027cc024638f356e1daf7b921cec6ba1b590e72383d9')
+	    {
+		document.getElementById('spanResult2').innerHTML = "Absolutely correct! 🥳"; 
+	    }
+	    else
+	    {
+		document.getElementById('spanResult2').innerHTML = "Incorrect, try harder 🥺";
+	    }
+	}        
+	</script>
+	<strong>Enter the flag: </strong><input id="plainText2" type="text" style="color:black;" /> 
+	<a class="button button--secondary button--rounded" onclick="checkHash2()">Check Flag</a>
+	<br />
+	<div id="spanResult2">&nbsp;&nbsp;</div>
+</div>
+
+<p>We can see you rocking already!!!</p>
+<h3 id="want-to-share-your-solutions">Want to share your solutions?</h3>
+<p>We all love reading and creating writeups! You are free to create and publish writeups for the assignments to flex your cool out of the box solutions or just to teach your peers how to solve a challenge :heart:<br />
+Just drop in the link to your github repository or merely a <a href="https://gist.github.com/">gist</a> containing the solution.<br />
+Who knows one might get some prizes or cute little surprises :wink:</p>
+
+<p><strong>HACK THE PLANET</strong></p>]]></content><author><name>deuterium</name><email>farziemailid69@gmail.com</email></author><category term="introduction" /><category term="assignment" /><summary type="html"><![CDATA[Assignments are the way to get quick hands on tasks and challenges. There will be plenty of hands-on experience through a guided set of static challenges.]]></summary></entry><entry><title type="html">What are CTFs</title><link href="https://deut-erium.github.io/ctf-tutorials/ctf-tutorials/2021/04/04/What-Are-CTFs.html" rel="alternate" type="text/html" title="What are CTFs" /><published>2021-04-04T00:00:00+05:30</published><updated>2021-04-04T00:00:00+05:30</updated><id>https://deut-erium.github.io/ctf-tutorials/ctf-tutorials/2021/04/04/What%20Are%20CTFs</id><content type="html" xml:base="https://deut-erium.github.io/ctf-tutorials/ctf-tutorials/2021/04/04/What-Are-CTFs.html"><![CDATA[<p>CTF or <a href="https://en.wikipedia.org/wiki/Capture_the_flag#Computer_security">Capture The Flag</a> in context of computer security, are special kind of information security competitions which serve as a gamified educational exercise to give participants experience in securing a machine as well as conducting and reacting to sort of attacks found in real world or some (supposedly) fun programming concept otherwise.
+<!--more--></p>
+
+<h2 id="what-are-flags-which-we-are-capturing">What are Flags which we are capturing?</h2>
+<p>Flags are often secret strings hidden in purposefully-vulnerable programs, websites or challenges. The challengers have to steal/hack the flag from the organizers of CTF event (as in Jepoardy format) or from other challengers (attack/defence format). The flags serve as a currency or proof of work for solving a given challenge which one can exchange for points :wink:<br />
+A typical flag may look like <code class="language-plaintext highlighter-rouge">flag{s0m3_puN_0r_c0mm3n7_r3l473d_70_7h3_ch4ll3n63}</code></p>
+
+<div><div class="extensions extensions--video">
+  <iframe src="https://www.youtube.com/embed/8ev9ZX9J45A?rel=0&amp;showinfo=0" frameborder="0" scrolling="no" allowfullscreen=""></iframe>
+</div>
+</div>
+
+<div><div class="extensions extensions--video">
+  <iframe src="https://www.youtube.com/embed/Lus7aNf2xDg?rel=0&amp;showinfo=0" frameborder="0" scrolling="no" allowfullscreen=""></iframe>
+</div>
+</div>
+
+<h2 id="types-of-ctfs">Types of CTFs</h2>
+<p>As crazy as hacking can get, so can get the competitions. CTFs are based on various formats. Each format has its own timeline, skillset, category and difficulty of interest.</p>
+
+<h3 id="jeopardy">Jeopardy</h3>
+<p>Yes somewhat similar to <a href="https://en.wikipedia.org/wiki/Jeopardy!">the show</a>. These can be considered similar to programming contests as all the competiting teams do not attack each other, but rather solve challenges.<br />
+Each challenge has its own weightage in terms of points. Once a team solve a challenge, they are awarded the assigned number of points for the challenge.<br />
+The points for a challenge are either pre-defined by the organizers based on difficulty or can be dynamically decreasing with the number of solves.<br />
+These kind of CTFs are the most common. One can typically find atleast two jeopardy style ctfs each <a href="https://ctftime.org/event/list/upcoming">weekend</a><br />
+<a href="https://picoctf.com/">picoCTF</a> is one notable example and servers are always (hopefully) up.
+A jeopardy ctf event typically spans two days but there are events which may span weeks or maybe months.</p>
+
+<h3 id="attack-defence-ctfs">Attack Defence CTFs</h3>
+<p>In an attack/defense style competitions, each team is given a machine (or a small network) to defend, typically on an isolated competition network.<br />
+Teams are scored on both their success in defending their assigned machine(s) and on their success in attacking the other team’s machines. A variation from classic flag-stealing is to “plant” own flags on opponent’s machines.<br />
+These kinds of events are less frequent and typically run only for a few hours.</p>
+
+<div><div class="extensions extensions--video">
+  <iframe src="https://www.youtube.com/embed/RXgp4cDbiq4?rel=0&amp;showinfo=0" frameborder="0" scrolling="no" allowfullscreen=""></iframe>
+</div>
+</div>
+
+<h3 id="king-of-the-hill">King Of The Hill</h3>
+<p>King of the Hill (KoTH), as the name suggests, is a competitive hacking game, where teams compete against other teams to compromise a machine and then patch its vulnerabilities to stop other players from also gaining access.<br />
+The longer a team maintains access, the more points it gets.<br />
+These are typically very short (typically an hour) and have strong emphasis on penetration testing. The most interesting aspect of these CTFs is that they can be livestreamed and spectated. Whats more fun than seeing hacking live! <br />
+<a href="https://tryhackme.com/games/koth">TryHackMe</a> has been promoting and organizing these events and one can join a game every 15 minutes!</p>
+
+<h2 id="categories">Categories</h2>
+<p>CTFs cover a wide spectrum of aspects related to cybersecurity and programming in general. Note that sometimes a clear distinction between category can not be made as tasks require a mixed set of skills.</p>
+
+<h3 id="cryptography">Cryptography</h3>
+<p><a href="https://en.wikipedia.org/wiki/Cryptography">Cryptography</a> is a study of secrets. These CTF challenges can cover anything from some old classical cipher(aka caesar) and encodings, breaking self-rolled/poorly designed or implemented cryptographic protocols to implementing new cryptographic attacks based on recent papers/publications. These challenges can involve heavy mathematical and theoretical concepts.</p>
+
+<h3 id="reverse-engineering">Reverse Engineering</h3>
+<p><a href="https://en.wikipedia.org/wiki/Reverse_engineering">Reverse Engineering</a> is the process by which a man-made object is deconstructed to reveal its designs, architecture, code or to extract knowledge from the object; similar to scientific research, the only difference being that scientific research is about a natural phenomenon.<br />
+What can be engineered can definitely be reverse-engineered and hence re-engineered too! These set of challenges often involve breaking authentication mechanisms or simply finding an input which gives a desried outcome. Be it lisence cracking, malware analysis, game hacking everything is a subset of reverse-engineering.</p>
+
+<h3 id="binary-exploitation">Binary Exploitation</h3>
+<p>Binary Exploitation is a broad topic within Cyber Security which really comes down to finding a vulnerability in the program and exploiting it to gain control of a shell or modifying the program’s functions. The binaries or executables involved are typically ELF or windows binary running on some server.</p>
+
+<h3 id="web-exploitation">Web Exploitation</h3>
+<p>Web exploitation challenges deal with security of web application often programmed in a variety of languages. The user is expected to find and leverage a vulnerability in the website to gain a higher privilege level.</p>
+
+<h3 id="osint-open-source-intelligence">OSINT (Open Source INTelligence)</h3>
+<p><a href="https://en.wikipedia.org/wiki/Open-source_intelligence">Open Source Intelligence</a> is the collection and analysis of information that is gathered from public, or open, sources. These usually involve the discovery of some information about a target from their online presence and history.</p>
+
+<h3 id="forensics">Forensics</h3>
+<p>Forensics is the art of recovering the digital trail left on a computer. There are plently of methods to find data which is seemingly deleted, not stored, or worse, covertly recorded.<br />
+These set of challenges usually involve smart enumeration to reveal patterns of required information. Be it picking out data of network dumps, or extracting information from corrupted files, forensics requires a lot of creativity and out-of-box thinking.</p>
+
+<h3 id="steganography">Steganography</h3>
+<p><a href="https://en.wikipedia.org/wiki/Steganography">Steganography</a> is the practice of concealing a file, message, image, or video within another file, message, image, or video. To be concise, hiding information from seemingly plain sight. Challenges usually involve discoverying a file, message or information from provided files.</p>
+
+<h3 id="penetration-testing">Penetration Testing</h3>
+<p>Penetration test is an authorized simulated cyberattack on a computer system, performed to evaluate the security of the system. Challenges usually involve a remote machine to explore and exploit.</p>
+
+<h3 id="mobile-security">Mobile Security</h3>
+<p>These set of challenges are involved with the security aspects of ever growing mobile technologies. Be it simply reverse engineering an android application or modifying and resigning it with malicious patch of code, this is more like reverse engineering for mobile based applications.</p>
+
+<h3 id="game-hacking">Game Hacking</h3>
+<p>These set of problems deal with the techniques ususally involved in hacking a game. There would usually be a game on completing which, a flag can be obtained.<br />
+Rest is up to participants’ creativity! Be it simply searching through game files, modifying game binary or memory addresses to one’s advantage or fooling the game server, the possibilities are limitless and limitlessly fun.</p>
+
+<h3 id="programming">Programming?</h3>
+<p>CTFs directly or indirectly involve a lot of programming, scripting and automation tasks. Be it repeatedly requesting a website, interacting with a socket server, some cool mathematical game or puzzle or any other generic task which can take years by hand!</p>
+
+<p>For more information check out this detailed video</p>
+
+<div><div class="extensions extensions--video">
+  <iframe src="https://www.youtube.com/embed/9WhQUItNNMw?rel=0&amp;showinfo=0" frameborder="0" scrolling="no" allowfullscreen=""></iframe>
+</div>
+</div>]]></content><author><name>deuterium</name><email>farziemailid69@gmail.com</email></author><category term="introduction" /><category term="ctf" /><summary type="html"><![CDATA[CTF or Capture The Flag in context of computer security, are special kind of information security competitions which serve as a gamified educational exercise to give participants experience in securing a machine as well as conducting and reacting to sort of attacks found in real world or some (supposedly) fun programming concept otherwise.]]></summary></entry><entry><title type="html">Contribute</title><link href="https://deut-erium.github.io/ctf-tutorials/ctf-tutorials/2021/04/04/contributions.html" rel="alternate" type="text/html" title="Contribute" /><published>2021-04-04T00:00:00+05:30</published><updated>2021-04-04T00:00:00+05:30</updated><id>https://deut-erium.github.io/ctf-tutorials/ctf-tutorials/2021/04/04/contributions</id><content type="html" xml:base="https://deut-erium.github.io/ctf-tutorials/ctf-tutorials/2021/04/04/contributions.html"><![CDATA[<p>This is an open-sourced website hosted on github pages!<br />
+We aim to build an awesome cybersecurity community, and for a community we require active members and collaborators who share their knowledge!
+<!--more--></p>
+
+<h2 id="contributing-as-a-collaborator">Contributing as a collaborator</h2>
+<p>This repository uses jekyll theme <a href="https://tianqi.name/jekyll-TeXt-theme/docs/en/quick-start">TeXt</a>, check out the documentation for features and syntax.<br />
+All the posts are stored in <a href="../_posts">_posts</a> directory, creating a file <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-name.md</code> creates a url <code class="language-plaintext highlighter-rouge">/YYYY/MM/DD/name.html</code> in the github pages.<br />
+To create a new post, just create a new file of the specified format.</p>
+
+<h3 id="not-a-collaborator">Not a collaborator?</h3>
+<p>Create a fork and issue a pull request with the repository. Make sure the branch you are working on is updated with the master branch. If you feel you would be a regular contributor, just feel free to let us know so that we can add you as collaborator!</p>
+
+<h3 id="not-sure-if-you-want-to-publish-directly">Not sure if you want to publish directly?</h3>
+<p>Create the same file with specified format in <a href="../_drafts">_drafts</a> (create if directory not available)</p>
+
+<h3 id="showcase-your-work">Showcase your work</h3>
+<p>You can showcase your work by having an author badge at the bottom which can be configured to display your profile (name, bio, github, twitter, linkedin etc).
+Just navigate to <a href="_data/authors.yml">_data/authors.yml</a> and append your details (take hints from pre existing author details).</p>
+
+<blockquote>
+  <p>Note: Undesired files (not to be shown on the website) or paths should be added in the <code class="language-plaintext highlighter-rouge">exclude</code> variable in <a href="../_config.yml">_config.yml</a></p>
+</blockquote>
+
+<h2 id="front-matter"><a href="https://jekyllrb.com/docs/front-matter/">Front-matter</a></h2>
+<p>Each post page has a beginning element called frontmatter which is enclosed in <code class="language-plaintext highlighter-rouge">---</code><br />
+This yaml is configuration of the current page.<br />
+Example</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+tags: introduction assignment
+aside:
+  toc: true
+sidebar:
+  nav: layouts
+excerpt_separator: &lt;!--more--&gt;
+author: deuterium
+key: assignment000001
+---
+</code></pre></div></div>
+
+<p>Some of the tags have been explained below,</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tag</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>author</td>
+      <td>The name of the article author as defined in <a href="https://github.com/CSEA-IITB/IITBreachers-wiki/tree/master/_data/authors.yml">_data/authors.yml</a></td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>tags</td>
+      <td>Space separated list of tags to categorize the page</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>aside</td>
+      <td>For providing table of contents on right side of screen, autogenerated from page contents</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>sidebar</td>
+      <td>For providing sidebar navigation to across articles, can be defined in <a href="https://github.com/CSEA-IITB/IITBreachers-wiki/tree/master/_data/navigation.yml">_data/navigation.yml</a> (needs to be defined beforehand)</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>key</td>
+      <td>A unique key to the page (required for loading comments)</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>excerpt_separator</td>
+      <td>An html tag <code class="language-plaintext highlighter-rouge">&lt;!--more--&gt;</code> to specify till where the text of artcle needs to be taken as the excerpt of the article</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>sha256hash</td>
+      <td>To be used in assignment tasks. Just specify the sha256 of the flag.</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>mathjax</td>
+      <td><code class="language-plaintext highlighter-rouge">true</code> enables mathjax syntax</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>mathjax_autoNumber</td>
+      <td>Autonumbers the equations</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>mermaid</td>
+      <td><code class="language-plaintext highlighter-rouge">true</code> enables mermaid js (very handy for quick diagrams)</td>
+    </tr>
+  </tbody>
+  <tbody>
+    <tr>
+      <td>chart</td>
+      <td><code class="language-plaintext highlighter-rouge">true</code> enables char.js on the page</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Check out other features in <a href="https://tianqi.name/jekyll-TeXt-theme/docs/en/quick-start">documentation</a></p>
+
+<h2 id="creating-an-assignment">Creating an assignment</h2>
+<p>Assignment will be just another article page, with tasks in it.<br />
+The files required for the task need to be put into <a href="assignemts">assignments</a> directory in a directory which is name of the article.<br />
+For each task, calculate the sha256 of the flag and put it in the <code class="language-plaintext highlighter-rouge">sha256hash</code> array in frontmatter.<br />
+Put the tags</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% assign index = 0 %}
+{% include checkflag.html %}
+</code></pre></div></div>
+<p>To specify index of the task and include a flag input box!<br />
+Check out <a href="https://github.com/deut-erium/ctf-tutorials/blob/master/_posts/2021-07-04-what%20are%20assignments.md">what are assignments.md</a> for an example.</p>
+
+<p>Well thats all it takes to contribute and publish your article :smile:<br />
+Expecting cool contributions! Who knows it may be your shot to learn writing and enhance your communication :wink:</p>
+
+<p>Let me know if something is missing or unclear</p>]]></content><author><name>deuterium</name><email>farziemailid69@gmail.com</email></author><category term="introduction" /><category term="contribution" /><summary type="html"><![CDATA[This is an open-sourced website hosted on github pages! We aim to build an awesome cybersecurity community, and for a community we require active members and collaborators who share their knowledge!]]></summary></entry><entry><title type="html">List of Hacking Sites</title><link href="https://deut-erium.github.io/ctf-tutorials/ctf-tutorials/2020/08/01/Hacking-Sites.html" rel="alternate" type="text/html" title="List of Hacking Sites" /><published>2020-08-01T00:00:00+05:30</published><updated>2020-08-01T00:00:00+05:30</updated><id>https://deut-erium.github.io/ctf-tutorials/ctf-tutorials/2020/08/01/Hacking%20Sites</id><content type="html" xml:base="https://deut-erium.github.io/ctf-tutorials/ctf-tutorials/2020/08/01/Hacking-Sites.html"><![CDATA[<p>There are plethora of challenge/hacking sites where one could find cool challenges any time of the year.<br />
+Some of them are ranked and have their own scoreboards while others are there just for learning sake.
+This is by no means an updated list, I will need to update it
+<!--more-->
+While one can find running CTFs all year round, CTFs have there own cons</p>
+<ul>
+  <li>The challenges/problems are shortlived. The lifetime of a typical CTF is 2 days and server based challenges would be typically running for a week or two.</li>
+  <li>The range of challenges in a CTF is not vast given the time constraints, and usually less focussed on a single concept.</li>
+</ul>
+
+<p>Enter the always running challenge sites to practice! While some of them are focussed on a specific topic say SQLi, others are more general. Check out the description of each site to know more.<br />
+The order of sites is purely coincidental, it by no means tries to order the awesomeness of sites!!<br />
+Various <code class="language-plaintext info highlighter-rouge">tags</code> shall be mentioned beneath each site to specify the challenge categories.</p>
+
+<h2 id="general">General</h2>
+<p>These are the sites which contain a broad range of challenges, usually on various topics.</p>
+
+<h3 id="wechall"><a href="https://www.wechall.net/">Wechall</a></h3>
+<p>Wechall is an attempt to form a global ranking amongst other challenge sites. It has various challenges, but most importantly it serves as a gateway to other challenge/hacking sites.<br />
+<code class="language-plaintext success highlighter-rouge">all</code></p>
+
+<h3 id="tryhackme"><a href="https://tryhackme.com/">TryHackMe</a></h3>
+<p class="info">Learning cybersecurity on TryHackMe is fun and addictive. Earn points by answering questions, taking on challenges and maintain your hacking streak through short lessons.</p>
+
+<h3 id="hackthebox"><a href="https://www.hackthebox.eu/">HackTheBox</a></h3>
+<p class="info">Hack The Box is an online platform allowing you to test your penetration testing skills and exchange ideas and methodologies with thousands of people in the security field.</p>
+
+<h3 id="ringzer0"><a href="https://ringzer0team.com/home">RingZer0</a></h3>
+<p class="info">RingZer0 holds a plethora of challenges on various topics. Plus the site has gold based system giving the ability to unlock hints for challenges in exchange of gold.<br />
+RingZer0 Team’s online CTF offers you tons of challenges designed to test and improve your hacking skills through hacking challenges.</p>
+
+<h3 id="w3challs"><a href="https://w3challs.com/">w3challs</a></h3>
+<p class="info">Our community offers you security challenges to learn and practice hacking.
+Our goal is to provide fun and unique challenges running in a real world environment, with no guessing and no simulation! Our challenges address several subsets of hacking, mostly oriented on the offensive. A multitude of technologies and architectures are waiting for you. Show us your mad skillz and pop some shells (or calcs)!</p>
+
+<p>W3Challs contains a wide variety of challenges which are good in quality with no guessing involved.</p>
+
+<h3 id="ctflearn"><a href="https://ctflearn.com/">ctflearn</a></h3>
+<p class="info">CTFlearn is an ethical hacking platform that enables tens of thousands to learn, practice, and compete. We host an ever-changing array of user-submitted and community-verified challenges in a wide range of topics.</p>
+<p>CTFlearn has an open community and a wide variety of community submitted challenges. Most of the challenges are on easier guessy side but good to get someone started.</p>
+
+<h3 id="netforce"><a href="https://www.net-force.nl/">netforce</a></h3>
+<p class="info">Net-Force.nl is a website where people interested in (internet) security can play so-called ‘hack challenges’, read interesting articles about security and hacking and communicate with each other about these subjects via the forums or IRC. Visitors can register and participate in these hack-challenges, increase their skills and climb the ranks.</p>
+
+<p>Net-Force.nl is an older sites, covering wide range of categories about
+<code class="language-plaintext success highlighter-rouge">all</code></p>
+
+<h3 id="modx"><a href="http://www.mod-x.co.uk/main.php">ModX</a></h3>
+<p>ModX is ARG style site, where you play an agent. Account creation requires solving a challenge. Mostly based on javascript, encryptions, encodings and general commonsense stuff<br />
+It is parent of three projects/pathways</p>
+<h4 id="modx-1"><a href="http://www.mod-x.co.uk/main.php">ModX</a></h4>
+<h4 id="omega-project"><a href="http://www.mod-x.co.uk/omegaproject/intro.php">Omega Project</a></h4>
+<h4 id="disvowed"><a href="http://www.mod-x.co.uk/disavowed/whatisit.php">Disvowed</a></h4>
+
+<h3 id="root-me"><a href="https://www.root-me.org/?lang=en">Root-Me</a></h3>
+<p class="info">Rootme is a well reputed french challenge site with challenges on almost any category. Although its present in various languages, some challenges may be in french.<br />
+Root-Me is a non-profit organization which goal is to promote the spread of knowledge related to hacking and information security.</p>
+
+<h3 id="hax-tor"><a href="http://hax.tor.hu/welcome/">Hax tor</a></h3>
+<p class="warning">Hax tor is an old website having a set of 50 cool challenges. 
+WARNING! This site was created in 2006. It is here for historical purposes.
+Many of the levels are deprecated because they rely on old PHP flaws or involve third parties.</p>
+
+<h3 id="viblo-ctf"><a href="https://ctf.viblo.asia/landing">viblo ctf</a></h3>
+
+<h3 id="hellbound-hackers"><a href="https://www.hellboundhackers.org/">hellbound hackers</a></h3>
+<p class="info">Welcome to HellBound Hackers. The hands-on approach to computer security. Learn how hackers break in, and how to keep them out.</p>
+
+<h3 id="defend-the-web"><a href="https://defendtheweb.net/?hackthis">Defend the web</a></h3>
+<p class="info">Defend the Web is an interactive security platform where you can learn and challenge your skills. Try and complete all of our 60+ hacking levels. Learn from our series of articles covering all aspects of security. Articles will guide you through the essentials to get started. As you progress more complex topics will be introduced to build up your knowledge.</p>
+
+<h3 id="enigma-group"><a href="https://www.enigmagroup.org/">Enigma Group</a></h3>
+<p class="info">Since 2003, Enigma Group has been providing its members a legal and safe security resource where they can develop their pen-testing skills on various challenges provided by this site.These challenges cover the exploits listed in the OWASP Top 10 Project and teach members the many other types of exploits that are found in today’s applications; thus, helping them to become better programmers in the mean time.</p>
+
+<h3 id="komodosec"><a href="http://ctf.komodosec.com/index.php">komodosec</a></h3>
+<p class="info">This is a game designed to challenge your application hacking skills. There are several challenges that stand before you. Each challenge contains a section of code that has vulnerable weak points. Your mission, should you choose to accept it, is to identify the vulnerability that exists in each challenge.</p>
+
+<h3 id="bright-shadows"><a href="http://bright-shadows.net/">Bright Shadows</a></h3>
+<p class="info">bright-shadows.net was a website that offered you hundreds of challenges in the fields of programming, JavaScript, PHP, Java, steganography, cryptography and others.</p>
+
+<p>Use <a href="http://web.archive.org/web/20160126142155/http://bright-shadows.net/">wayback machine</a> to navigate the challenges :wink:</p>
+
+<h3 id="ctf-101"><a href="https://ctf101.org/">ctf 101</a></h3>
+<p class="info">Capture The Flags, or CTFs, are a kind of computer security competition. Teams of competitors (or just individuals) are pitted against each other in a test of computer security skill. Very often CTFs are the beginning of one’s cyber security career due to their team building nature and competetive aspect. In addition, there isn’t a lot of commitment required beyond a weekend. In this guide/wiki/handbook you’ll learn the techniques, thought processes, and methodologies you need to succeed in Capture the Flag competitions.</p>
+
+<h3 id="hackcenter"><a href="https://hackcenter.com">hackcenter</a></h3>
+<p class="warning">Learn cybersecurity skills by playing Capture the Flag. Compete with other players and become a hacker today.
+Changed to <a href="https://www.forallsecure.com/">forallsecure</a></p>
+
+<h3 id="hack-this-site"><a href="https://www.hackthissite.org/">hack this site</a></h3>
+<p class="info">Hack This Site is a free, safe and legal training ground for hackers to test and expand their hacking skills. More than just another hacker wargames site, we are a living, breathing community with many active projects in development, with a vast selection of hacking articles and a huge forum where users can discuss hacking, network security, and just about everything. Tune in to the hacker underground and get involved with the project.</p>
+
+<h3 id="rankk"><a href="https://www.rankk.org/">rankk</a></h3>
+<p class="info">Rankk is about solving challenges, discovering and learning new knowledge. It’s a journey, a sacred, personal experience. The site is a reincarnation of The Pyramid, an earlier attempt at assembling a set of challenges for those who enjoy solving problems. You start with the easy levels and progress to the intermediate and hard levels by solving the minimum number of required challenges at each level.</p>
+
+<h3 id="lost-chall"><a href="http://www.lost-chall.org/">lost chall</a></h3>
+<p class="info">This site is a tribute for all fans of the show with some skills in Cryptography, Steganography, Programming, Reversing, Logic, Web-Security, Mathematical knowledge. There are 6 different levels and one master challenge. The first challenges, those where you have access at the beginning are easy. Then it gets more and more difficult up the level-tree.</p>
+
+<h3 id="brain-quest"><a href="http://www.brainquest.sk/">brain quest</a></h3>
+<p class="info">Welcome to the portal with the highest number of logic riddles and rebuses. Beside riddles targeted as logical puzzles you are going to learn how to decrypt encrypted messages. Finds secret messages hidden in pictures, music or in simple poems or rhymes. A popular puzzle category with purely logical character are undoubtedly Zebra puzzles. And the most popular puzzles are of Orbis Pictus category, where I all have equal chances, where you have to find just what you see in the picture. Try how you stand with general knowledge. Please login and certainly you will find something new to learn.</p>
+
+<h3 id="can-hack-me"><a href="https://canhack.me/">can hack me</a></h3>
+<p class="info">This website offers the opportunity for to test your hack skills. To solve the challenge, capture the flag.</p>
+
+<p>try <a href="http://web.archive.org/web/20190706063734/https://canhack.me/">wayback machine</a> to access the challenges</p>
+
+<h3 id="hackburger"><a href="https://hackburger.ee/challenge/">hackburger</a></h3>
+<p>The site has been closed<br />
+Again <a href="http://web.archive.org/web/20171014051812/http://hackburger.ee/challenge/">wayback machine</a> for help</p>
+
+<h3 id="hacker-gateway"><a href="https://www.hackergateway.com/">hacker gateway</a></h3>
+<p>General CTF</p>
+
+<h3 id="wikkerd"><a href="https://www.wixxerd.com/challenges/">wikkerd</a></h3>
+<p>General CTF</p>
+
+<h3 id="challengeland"><a href="https://www.challengeland.co/#">challengeland</a></h3>
+<p>Yet another challenge site which tries to gamify the challenges</p>
+
+<h3 id="revolution-elite"><a href="https://www.revolutionelite.co.uk/">revolution elite</a></h3>
+<p class="info">Revolution Elite is a computer security, math-based and programming-based challenge site. Categories include Android, Cryptography, Javascript, Java, Logic, Steganography, Exploitation, Programming, and other miscellaneous categories. Sometimes it will be obvious what to do, while sometimes you may have to poke around or do some research.</p>
+
+<h3 id="security-traps"><a href="https://www.securitytraps.pl/">security traps</a></h3>
+<p class="info">Welcome to Security Traps. Here you can try challenges from different security domains. The website is not for educational purposes, it aims to help you check your skill level. In order to register, you must complete 5 pre-levels. I’ve hidden some Easter Eggs on the site,so feel encouraged to audit ;)</p>
+
+<h3 id="hackerfire"><a href="https://ctf.hackerfire.com/">hackerfire</a></h3>
+<p class="info">Welcome to HackerFire! A learning CTF from the developers of CTFd. Play around, don’t be mean, and have fun.</p>
+
+<h3 id="list-brain"><a href="http://listbrain.awardspace.biz/">list brain</a></h3>
+
+<h3 id="hacking-lab"><a href="https://www.hacking-lab.com/index.html">Hacking-Lab</a></h3>
+<p class="info">Hacking-Lab is a service by Security Competence GmbH, a Swiss subsidiary of Compass Security AG. Compass Security is a well renowned European company specializing in penetration testing, incident response, digital forensics, and security trainings. Our research and community contributions regularly gain international recognition. Our employees have presented at the highly regarded security conferences, such as Black Hat Las Vegas and Microsoft’s invite only conference, called Blue Hat, in Redmond. With Hacking-Lab, the flagship project of Compass Security, a comprehensive attack/defense CTF system is provided to run the European Cyber Security Challenge. Hacking-Lab is licensed to numerous universities worldwide for educational purposes, with its aims of building young cyber talents as well as encouraging them to pursue a career in cyber security. Build your skills and join us for exciting challenges. www.compass-security.com</p>
+
+<h3 id="hacker101"><a href="https://ctf.hacker101.com/">Hacker101</a></h3>
+<p class="info">Hacker101 is a free class for web security. Whether you’re a programmer with an interest in bug bounties or a seasoned security professional, Hacker101 has something to teach you.</p>
+
+<h3 id="cyberseclabs"><a href="https://www.cyberseclabs.co.uk/">cyberseclabs</a></h3>
+<p class="info">At CyberSecLabs, we aim to provide secure, high-quality training services that allow information security students the opportunity to safely learn and practice penetration testing skills.</p>
+
+<h3 id="evilzone"><a href="https://evilzone.org/index.php?page=challenges">Evilzone</a></h3>
+<p class="info">Evilzone used to have a forum, file hosting, multiple IRC servers and more. But due to lack of people, time and resources we are now focusing more on delivering services. For now Evilzone will mostly provide fun and educational hacking and security related challenges, with more services coming later.</p>
+
+<h3 id="try2hack"><a href="www.try2hack.nl/">try2hack</a></h3>
+<p class="info">This site provides several security-oriented challenges for your entertainment. It is actually one of the oldest challenge sites still around :) The challenges are diverse and get progressively harder.</p>
+
+<h3 id="hack-me"><a href="https://hack.me/s/">Hack me</a></h3>
+<p class="info">Hack.me is a FREE, community based project powered by eLearnSecurity. You can think of it as a platform where the community can build, host and share vulnerable web application code for educational and research purposes. It aims to be the largest collection of “runnable” vulnerable web applications, code samples and CMS’s online. The platform is available without any restriction to any party interested in Web Application Security.</p>
+
+<h3 id="game-of-hacks"><a href="http://www.gameofhacks.com/">Game of Hacks</a></h3>
+<p>This game was designed to test your application hacking skills. You will be presented with vulnerable pieces of code and your mission if you choose to accept it is to find which vulnerability exists in that code as quickly as possible</p>
+
+<h3 id="eset"><a href="https://join.eset.com/en/challenges">ESET</a></h3>
+<p class="info">You might have years of experience, or you might be just starting out, for us you are equally important and desirable. What we need are your skills, talent and initiative. If you’re interested in any of these positions and you think you have what it takes to do this job, we would like to talk to you. Send us the best examples of your previous work, or join the fun and solve the problem next to the position you would like to apply for.</p>
+
+<h3 id="thisislegal"><a href="https://thisislegal.com/">thisislegal</a></h3>
+<p class="info">The aim of the site is to help you learn and improve as much as we can and also provide a community with a chance to chat. The site is always up for suggestions for improvement and any challenge submissions or tutorial content are also welcome so please help to improve our community.</p>
+
+<h3 id="hacking-allowed"><a href="http://hacking.allowed.org/">Hacking allowed</a></h3>
+
+<h3 id="valhalla"><a href="https://halls-of-valhalla.org/beta/">Valhalla</a></h3>
+
+<h3 id="microcontest"><a href="http://www.microcontest.com/?lang=en">microcontest</a></h3>
+<p class="info">µContest is a site proposing lots of programming challenges. This means you will find challenges you have to solve by creating programs in the language you want. You win a number of points when you validate a chall, depending on its difficulty. There are challenges for all levels so do not hesitate to register ;)</p>
+
+<h3 id="stereotyped-challenges"><a href="https://chall.stypr.com/">Stereotyped challenges</a></h3>
+<p class="info">Hackers tend to have stereotypes about wargames; Many consider wargames as basic learning materials for new-comers of cyber security. Well, it’s not completely true. I personally think wargames are supposed to be and meant to be very challenging, regardless of how they’re good at it. So, here it is. This wargame is a little bit different to break your typical stereotypes. This wargame is intended for offensive security experts who are willing to overcome situations of getting stuck in breaking into web services or web-based solutions.</p>
+
+<h3 id="gameofhacks"><a href="http://www.gameofhacks.com/">gameofhacks</a></h3>
+<p class="info">This game was designed to test your application hacking skills. You will be presented with vulnerable pieces of code and your mission if you choose to accept it is to find which vulnerability exists in that code as quickly as possible.</p>
+
+<h3 id="vulnhub"><a href="https://www.vulnhub.com/">Vulnhub</a></h3>
+<p class="info">To provide materials that allows anyone to gain practical ‘hands-on’ experience in digital security, computer software &amp; network administration.</p>
+
+<h3 id="pentestit"><a href="https://lab.pentestit.ru/">Pentestit</a></h3>
+<p class="info">Penetration testing laboratories “Test lab” emulate an IT infrastructure of real companies and are created for a legal pen testing and improving penetration testing skills.</p>
+
+<h3 id="eset-1"><a href="https://join.eset.com/en/challenges">ESET</a></h3>
+<p class="info">If you want to join the team that every day faces global cyber-threats, uncover a hidden puzzle in the crackme program and prove us your potential.</p>
+
+<h3 id="pentest-practice"><a href="https://www.pentestpractice.com/">Pentest practice</a></h3>
+<p>“Practice makes Pwnage”</p>
+
+<h3 id="netgarage-io"><a href="http://io.netgarage.org/">netgarage IO</a></h3>
+<p>This is the frontpage of the IO wargame. IO is our most mature game, but is never the less in continually updated as technology develops. We provide recent radare2 and gdb builds.</p>
+
+<h3 id="overthewire"><a href="http://overthewire.org/wargames/">Overthewire</a></h3>
+<p class="info">The wargames offered by the OverTheWire community can help you to learn and practice security concepts in the form of fun-filled games. To find out more about a certain wargame, just visit its page linked from the menu on the left.</p>
+<h4 id="bandit"><a href="https://overthewire.org/wargames/bandit/">bandit</a></h4>
+<p class="success">The Bandit wargame is aimed at absolute beginners. It will teach the basics needed to be able to play other wargames. If you notice something essential is missing or have ideas for new levels, please let us know!</p>
+
+<h4 id="natas"><a href="https://overthewire.org/wargames/natas/">natas</a></h4>
+<p class="success">Natas teaches the basics of serverside web-security.</p>
+
+<h4 id="leviathan"><a href="https://overthewire.org/wargames/leviathan/">leviathan</a></h4>
+<p class="success">Leviathan is a wargame that has been rescued from the demise of intruded.net, previously hosted on leviathan.intruded.net. Big thanks to adc, morla and reth for their help in resurrecting this game!</p>
+
+<h4 id="krypton"><a href="https://overthewire.org/wargames/krypton/">krypton</a></h4>
+<p class="success">The Krypton wargame.</p>
+
+<h4 id="narnia"><a href="https://overthewire.org/wargames/narnia/">narnia</a></h4>
+<p class="success">Narnia is a wargame that has been rescued from the demise of intruded.net, previously hosted on narnia.intruded.net. Big thanks to adc, morla and reth for their help in resurrecting this game!</p>
+
+<h4 id="behemoth"><a href="https://overthewire.org/wargames/behemoth/">behemoth</a></h4>
+<p class="success">Behemoth is a wargame that has been rescued from the demise of intruded.net, previously hosted on behemoth.intruded.net. Big thanks to adc, morla and reth for their help in resurrecting this game!</p>
+
+<h4 id="utumno"><a href="https://overthewire.org/wargames/utumno/">utumno</a></h4>
+<p class="success">Utumno is a wargame that has been rescued from the demise of intruded.net, previously hosted on utumno.intruded.net. Big thanks to adc, morla and reth for their help in resurrecting this game!</p>
+
+<h4 id="maze"><a href="https://overthewire.org/wargames/maze/">maze</a></h4>
+<p class="success">Maze is a wargame that has been rescued from the demise of intruded.net, previously hosted on maze.intruded.net. Big thanks to adc, morla and reth for their help in resurrecting this game!</p>
+
+<h4 id="vortex"><a href="https://overthewire.org/wargames/vortex/">vortex</a></h4>
+
+<h4 id="semtex"><a href="https://overthewire.org/wargames/semtex/">semtex</a></h4>
+<p class="success">This network is a legal environment where you can learn coding/hacking techniques without destroying anything. You have to solve Semtex 0 to get a username/password for login. Once logged in, you have to make your way from one level to the next, each one containing a small security hole/feature that has been installed for you. Your mission is to find out how to exploit the weakness and to cause interesting behavior :)</p>
+
+<h4 id="manpage"><a href="https://overthewire.org/wargames/manpage/">manpage</a></h4>
+<p class="success">Manpage is a wargame that has been rescued from the demise of intruded.net, previously hosted on manpage.intruded.net. Big thanks to adc, morla and reth for their help in resurrecting this game!</p>
+
+<h4 id="drifter"><a href="https://overthewire.org/wargames/drifter/">drifter</a></h4>
+<p class="success">Drifter is a wargame along the lines of Vortex.</p>
+
+<h3 id="underthewire"><a href="http://www.underthewire.tech/wargames.htm">Underthewire</a></h3>
+<p class="info">Under the Wire trains experienced, developing, and novice Information Technologists to use Windows PowerShell in a variety of situations through innovative and fun wargames.</p>
+
+<h3 id="atnea"><a href="https://atenea.ccn-cert.cni.es/home">ATNEA</a></h3>
+<p class="info">ATENEA is a cyber security platform that presents a number of challenges which cover a wide array of topics: Cryptography and Steganography , Exploiting, Forensics , Networking and Reversing , etc.</p>
+
+<h2 id="ctfs-with-servers-up">CTFs with servers up</h2>
+<h3 id="picoctf"><a href="https://picoctf.com/">Picoctf</a></h3>
+<p class="info">picoCTF is a free computer security game targeted at middle and high school students, created by security experts at Carnegie Mellon University. The game consists of a series of challenges centered around a unique storyline where participants must reverse engineer, break, hack, decrypt, or do whatever it takes to solve the challenge.</p>
+
+<p>Picoctf is a high school level annual 14 day ctf by CMU. It is one of the most popular CTFs with low entry barrier and servers running all year round!</p>
+
+<h3 id="backdoor"><a href="https://backdoor.sdslabs.co/">Backdoor</a></h3>
+<p class="info">Backdoor is a platform for hackers to show their talent in a competitive environment. Earlier it was launched only within the IIT Roorkee campus, but now it has been made available for anyone over the internet.</p>
+<p>It is a good archive of past backdoorctf challenges and other internal challenges of IITR.</p>
+
+<h3 id="ctf365"><a href="https://ctf365.com/">ctf365</a></h3>
+<p>CTF365 (Capture the flag 365) is a “security training platform for it industry” with a focus on security professionals, system administrators and web developers.</p>
+
+<h3 id="angstrom"><a href="https://angstromctf.com/">angstrom</a></h3>
+<p class="info">Welcome to ångstromCTF, a capture-the-flag (CTF) competition hosted and organized entirely by students at Montgomery Blair High School! CTF cybersecurity competitions have become an increasingly popular way for students to learn more about cybersecurity and develop and refine their hacking skills. These competitions are designed to educate and inspire high school students through interactive hacking challenges.</p>
+
+<h3 id="pactf"><a href="https://2019.pactf.com/">pactf</a></h3>
+<p class="info">PACTF is an annual online computer security competition for middle and high school students.</p>
+
+<h3 id="sans-holiday-hack"><a href="https://holidayhackchallenge.com/past-challenges/">SANS holiday hack</a></h3>
+<p>The SANS holiday hack previous challenges</p>
+
+<h3 id="247ctf"><a href="https://247ctf.com/">247ctf</a></h3>
+<p class="info">Most CTF competitions are only online for a few days, limiting the ability of players to access, solve and learn from the interesting problems created. The 247/CTF is an online, year-round, continuous learning environment.</p>
+
+<h2 id="cryptography">Cryptography</h2>
+
+<h3 id="cryptohack"><a href="https://cryptohack.org/">CryptoHack</a></h3>
+<p class="info">A fun platform for learning modern cryptography</p>
+<p>One of the most amazing cryptography sites with amazing UI and non-guessy amazing challenges.<br />
+It has the best discord community I have ever been into</p>
+
+<h3 id="cryptopals"><a href="http://cryptopals.com/">Cryptopals</a></h3>
+<p>This site will host all eight sets of our crypto challenges, with solutions in most mainstream languages.</p>
+
+<h3 id="id0-rsa"><a href="https://id0-rsa.pub/">id0 rsa</a></h3>
+<p class="info">Below are some problems related to computer security (specifically poorly implemented security). Do Them. You are free to use any language and environment you like to complete them. The problems require familiarity with programming, but not necessarily with applied cryptography or computer security in general.</p>
+
+<h3 id="electrica"><a href="http://www.caesum.com/game/">Electrica</a></h3>
+<p class="info">Electrica is a puzzle/challenge site which has grown from two previous sites - C&amp;C and the Cronos Crypto Challenge.</p>
+
+<h3 id="try-to-decrypt"><a href="https://www.trytodecrypt.com/index.php">try to decrypt</a></h3>
+<p>A nice short set of bootleg crypto</p>
+
+<h3 id="cryptoclub"><a href="https://www.cryptoclub.org/challenges/index.php">Cryptoclub</a></h3>
+<p>Crack mysterious messages, submit jokes for others to decrypt, and access secret messages within your private groups.</p>
+
+<h3 id="mystery-twister"><a href="https://www.mysterytwisterc3.org/en/">mystery twister</a></h3>
+<p class="info">You like riddles? You always loved to solve the crosswords in your newspaper? Or maybe you are just curious and want to find out about some of the ways to hide a secret (and possibily even to uncover it)? This is your place! Here at MysteryTwister C3 you can solve crypto challenges, starting from the simple Caesar cipher all the way to modern AES we have challenges for everyone. Our challenges range from level I to III, and an additional level X for “mystery” challenges (they may have been unsolved for a long time, mostly we don’t know their solution or have no idea whether there is a solution at all). If you are a beginner its probably best if you start trying those challenges that have been solved mostly (see table below). Additional information regarding MTC3 can be found on our about page.</p>
+
+<h2 id="reverse-engineering">Reverse Engineering</h2>
+
+<h3 id="reversingkr"><a href="http://reversing.kr/challenge.php">reversing.kr</a></h3>
+<p>This site tests your ability to Cracking &amp; Reverse Code Engineering.</p>
+
+<h3 id="malwaretech"><a href="https://www.malwaretech.com/beginner-malware-reversing-challenges">malwareTech</a></h3>
+<p>The purpose of these challenges is to familiarize beginners with common malware techniques.</p>
+
+<h3 id="crackmesone"><a href="https://crackmes.one/">Crackmes.one</a></h3>
+<p>This is a simple place where you can download crackmes to improve your reverse engineering skills.</p>
+
+<h3 id="challengesre"><a href="https://challenges.re/">Challenges.re</a></h3>
+<p>Well, “challenges” is a loud word, these are rather just exercises for RE.</p>
+
+<h3 id="beginnersre"><a href="https://beginners.re">Beginners.re</a></h3>
+
+<h3 id="reverseput-as"><a href="https://reverse.put.as/crackmes/">Reverseput as</a></h3>
+<p>A collection of crackmes for OS X. Send them to me if you have new ones to add!</p>
+
+<h3 id="flare-on"><a href="http://flare-on.com/">Flare-On</a></h3>
+<p>FireEye’s challenge RE.</p>
+
+<h3 id="androidappre"><a href="https://maddiestone.github.io/AndroidAppRE/">AndroidAppRE</a></h3>
+<p class="info">Welcome to AndroidTM App Reverse Engineering 101! This workshop’s goal is to give you the foundations to begin reverse engineering Android applications. While this workshop won’t teach you the details of Android app development, Android malware analysis, Android vulnerability hunting, etc., I hope to give you all the necessary foundations through this workshop such that you can apply your new Android reversing skills to doing those things.</p>
+
+<h2 id="binary-exploitation">Binary Exploitation</h2>
+
+<h3 id="microcorruption"><a href="https://microcorruption.com/">microcorruption</a></h3>
+<p>Given a debugger and a device, find an input that unlocks it. Solve the level with that input.</p>
+
+<h3 id="ropemporium"><a href="https://ropemporium.com/">Ropemporium</a></h3>
+<p>Learn return-oriented programming through a series of challenges designed to teach ROP techniques in isolation, with minimal reverse-engineering and bug-hunting.</p>
+
+<h3 id="pwn-adventure"><a href="http://pwnadventure.com/">pwn adventure</a></h3>
+<p>Pwn Adventure 3: Pwnie Island is a limited-release, first-person, true open-world MMORPG set on a beautiful island where anything could happen. That’s because this game is intentionally vulnerable to all kinds of silly hacks! Flying, endless cash, and more are all one client change or network proxy away. Are you ready for the mayhem?!</p>
+
+<h3 id="exploit-education"><a href="https://exploit.education/">Exploit education</a></h3>
+<p>exploit.education provides a variety of resources that can be used to learn about vulnerability analysis, exploit development, software debugging, binary analysis, and general cyber security issues.</p>
+
+<h3 id="pwnablekr"><a href="http://pwnable.kr/play.php">pwnable.kr</a></h3>
+<p>‘pwnable.kr’ is a non-commercial wargame site which provides various pwn challenges regarding system exploitation. the main purpose of pwnable.kr is ‘fun’.please consider each of the challenges as a game. while playing pwnable.kr, you could learn/improve system hacking skills but that shouldn’t be your only purpose.</p>
+
+<h3 id="pwnablexyz"><a href="https://pwnable.xyz/">Pwnable.xyz</a></h3>
+<p class="info">Here you will find pwnables for beginners. Most of the challenges were created for an internal event at our ctf team OpenToAll. Eventually I grew fond of the idea of hosting them publicly, so this website was born. Some challenges will have multiple variations with progressive difficulty, I hope you enjoy them all.</p>
+
+<h3 id="smash-the-stack"><a href="http://smashthestack.org/wargames.html">Smash the stack</a></h3>
+<p>Smash the stack Wargaming network</p>
+
+<h3 id="pwnabletw"><a href="https://pwnable.tw/challenge/">Pwnable.tw</a></h3>
+<p>Pwnable.tw is a wargame site for hackers to test and expand their binary exploiting skills.</p>
+
+<h2 id="web">Web</h2>
+
+<h3 id="websecfr"><a href="http://websec.fr/">websec.fr</a></h3>
+<p class="info">because you can’t resist a good: .php?id=</p>
+
+<h3 id="owasp-juice-shop"><a href="https://owasp.org/www-project-juice-shop/">owasp juice shop</a></h3>
+<p class="info">OWASP Juice Shop is probably the most modern and sophisticated insecure web application! It can be used in security trainings, awareness demos, CTFs and as a guinea pig for security tools! Juice Shop encompasses vulnerabilities from the entire OWASP Top Ten along with many other security flaws found in real-world applications!</p>
+
+<h3 id="xss-payloads"><a href="http://www.xss-payloads.com/tools-list.html?t#category=training">xss payloads</a></h3>
+<p>All about XSS attacks and payloads</p>
+
+<h3 id="portswigger"><a href="https://portswigger.net/web-security">portswigger</a></h3>
+<p class="info">Free, online web security training from the creators of Burp Suite</p>
+
+<h3 id="google-xss-game"><a href="https://xss-game.appspot.com/">google xss game</a></h3>
+<p class="info">At Google, we know very well how important these bugs are. In fact, Google is so serious about finding and fixing XSS issues that we are paying mercenaries up to $7,500 for dangerous XSS bugs discovered in our most sensitive products. In this training program, you will learn to find and exploit XSS bugs. You’ll use this knowledge to confuse and infuriate your adversaries by preventing such bugs from happening in your applications.</p>
+
+<h3 id="bwapp"><a href="http://www.itsecgames.com/">bWAPP</a></h3>
+<p class="info">bWAPP, or a buggy web application, is a free and open source deliberately insecure web application.
+It helps security enthusiasts, developers and students to discover and to prevent web vulnerabilities.
+bWAPP prepares one to conduct successful penetration testing and ethical hacking projects. What makes bWAPP so unique? Well, it has over 100 web vulnerabilities!</p>
+
+<h3 id="tasteless-challenges"><a href="http://chall.tasteless.eu/">Tasteless challenges</a></h3>
+<p class="info">I have prepared several levels here that will test your knowledge in diffrent ways. Also you will be tested in some ways of logical thinking and exploiting not so obvious security holes. Apart from those well known sql injection vulnerabilities I prepared some level where you wont be able just to put some sql commands. I hope this will be, at least for some of you, fun and you will enjoy all.</p>
+
+<h3 id="gruyere"><a href="http://google-gruyere.appspot.com/">gruyere</a></h3>
+<p class="info">This codelab shows how web application vulnerabilities can be exploited and how to defend against these attacks.</p>
+
+<h3 id="redtiger-hackit"><a href="https://redtiger.labs.overthewire.org/">Redtiger hackit</a></h3>
+<p class="info">It has some similarities to h0yt3r’s and shadowleet’s sql-injection hackits but it will also test you in some logical ways of thinking. All levels are based on real vulnerabilitys I found in the wild.</p>
+
+<h3 id="flaws"><a href="http://flaws.cloud/">flAWS</a></h3>
+<p class="info">Through a series of levels you’ll learn about common mistakes and gotchas when using Amazon Web Services (AWS). There are no SQL injection, XSS, buffer overflows, or many of the other vulnerabilities you might have seen before. As much as possible, these are AWS specific issues.</p>
+
+<h3 id="flaws2"><a href="http://flaws2.cloud/">flAWS2</a></h3>
+<p class="info">Similar to the original flAWS.cloud (also created by Summit Route), this game/tutorial teaches you AWS (Amazon Web Services) security concepts. The challenges are focused on AWS specific issues, so no buffer overflows, XSS, etc. You can play by getting hands-on-keyboard or just click through the hints to learn the concepts and go from one level to the next without playing.</p>
+
+<h3 id="webgoat"><a href="http://webappsecmovies.sourceforge.net/webgoat/">WebGoat</a></h3>
+<p class="info">WebGoat is a deliberately insecure application that allows interested developers just like you to test vulnerabilities commonly found in Java-based applications that use common and popular open source components.</p>
+
+<h3 id="lord-of-sqli"><a href="https://los.rubiya.kr/">Lord Of SQLi</a></h3>
+<p>A site specifically focussed on SQL Injections</p>
+
+<h3 id="dvwa"><a href="http://www.dvwa.co.uk/">DVWA</a></h3>
+<p class="info">Damn Vulnerable Web App (DVWA) is a PHP/MySQL web application that is damn vulnerable. Its main goals are to be an aid for security professionals to test their skills and tools in a legal environment, help web developers better understand the processes of securing web applications and aid teachers/students to teach/learn web application security in a class room environment.</p>
+
+<h3 id="hacker-test"><a href="http://www.hackertest.net/">Hacker test</a></h3>
+<p class="info">HackerTest.net is your own online hacker simulation. With 20 levels that require different skills to get to another step of the game, this new real-life imitation will help you advance your security knowledge. HackerTest.net will help you improve your JavaScript, PHP, HTML and graphic thinking in a fun way that will entertain any visitor!</p>
+
+<h3 id="noobinfoseclabs"><a href="http://ctf.infosecinstitute.com/index.php">NoobInfoseclabs</a></h3>
+<p class="info">The Infosec Instite n00bs CTF Labs is a web application that hosts 15 mini Capture the Flag (CTF) challenges intended for beginners. The levels can be navigated in the navbar. There is no scoring or leaderboard, but to claim the bounty for each level (bounties range from $10 to $150) you’ll need to write up the solution and any other helpful instructions or information and post that in a public place (blog, forum, etc.). If you don’t have a place to post it…ask a friend!</p>
+
+<h2 id="forensics">Forensics</h2>
+
+<h3 id="forensics-contest"><a href="https://forensicscontest.com/">forensics contest</a></h3>
+<p>PCAP forensics</p>
+
+<h3 id="amanhardikar"><a href="https://www.amanhardikar.com/mindmaps/ForensicChallenges">amanhardikar</a></h3>
+<p>For various forensics challenges and mindmap</p>
+
+<h2 id="arg">ARG</h2>
+
+<h3 id="ae37ff"><a href="https://ae27ff.meme.tips/about.php">ae37ff</a></h3>
+<p class="info">Since April 2015, this website has served as a set of levels that simulate challenges and puzzles that one may encounter during an ARG (Alternate Reality Game) including simple ciphers, steganography, different types of encodings, and familiarity with internet resources. Each level consists of some text, images, data, or files that is intended to lead you to the next page with some amount of investigation.</p>]]></content><author><name>deuterium</name><email>farziemailid69@gmail.com</email></author><category term="introduction" /><category term="wargames" /><category term="ctfs" /><category term="hacking" /><category term="cybersecurity" /><summary type="html"><![CDATA[There are plethora of challenge/hacking sites where one could find cool challenges any time of the year. Some of them are ranked and have their own scoreboards while others are there just for learning sake. This is by no means an updated list, I will need to update it]]></summary></entry></feed>

@@ -1,0 +1,1 @@
+window.TEXT_SEARCH_DATA={'posts':[{'title':"List of Hacking Sites",'url':"/ctf-tutorials/2020/08/01/Hacking-Sites.html"},{'title':"What are CTFs",'url':"/ctf-tutorials/2021/04/04/What-Are-CTFs.html"},{'title':"Contribute",'url':"/ctf-tutorials/2021/04/04/contributions.html"},{'title':"What Are Assignments",'url':"/ctf-tutorials/2021/07/04/what-are-assignments.html"}]};
