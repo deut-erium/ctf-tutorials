@@ -1,13 +1,23 @@
 ---
+title: Contribute
 tags: introduction contribution
+key: contribution000001
 aside:
   toc: true
 sidebar:
-  nav: layouts
+  nav: aboutnav
 author: deuterium
+full_width: false
+mathjax: false
+mathjax_autoNumber: false
+mermaid: false
+chart: false
+show_edit_on_github: true
+comment: false
+show_author_profile: true
 excerpt_separator: <!--more-->
-key: contribution00001
 ---
+
 
 This is an open-sourced website hosted on github pages!  
 We aim to build an awesome cybersecurity community, and for a community we require active members and collaborators who share their knowledge!

@@ -1,6 +1,16 @@
 header:
   - titles:
       # @start locale config
+      en      : &EN       GitHub
+      en-GB   : *EN
+      en-US   : *EN
+      en-CA   : *EN
+      en-AU   : *EN
+      # @end locale config
+    url: https://github.com/deut-erium/ctf-tutorials
+
+  - titles:
+      # @start locale config
       en      : &EN       Archive
       en-GB   : *EN
       en-US   : *EN
@@ -47,12 +57,20 @@ header:
       fr-FR   : *FR
       fr-LU   : *FR
       # @end locale config
-    url: /about.html
-layouts:
+    url: /2021/04/04/What-Are-CTFs.html
+
+
+aboutnav:
+  - title:      About
+    children:
+      - title:  About Me
+        url:    https://deut-erium.github.io/about.html 
+      - title:  Blog Home
+        url:    https://deut-erium.github.io/
   - title:      Introduction
     children:
-      - title:  Welcome
-        url:    /2021/07/04/welcome.html
+      - title:  List of Hacking Sites
+        url:    /2020/08/01/Hacking-Sites.html
       - title:  What are CTFs?
         url:    /2021/04/04/What-Are-CTFs.html
       - title:  What are Assigments?

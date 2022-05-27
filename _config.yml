@@ -18,11 +18,14 @@
 ##############################
 text_skin: "dark" # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: "tomorrow-night-bright" # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
-url     : "https://deut-erium.github.io"
+url     : "https://deut-erium.github.io/ctf-tutorials"
 baseurl : "/ctf-tutorials"
-title   : Ctf tutorials the fun way
+title   : Blog on CTFs
+tagline : "Himanshu Sheoran's tutorial blog about CTFs"
 description: > # this means to ignore newlines until "Language & timezone"
-  Learn the necessary Evil
+  This blog is about CTFs in general hopefully covering cryptography, SAT/SMT solvers
+  programming, python etc.
+  
 
 
 ## => Language and Timezone
@@ -172,6 +175,8 @@ analytics:
   google:
     tracking_id : "G-TXSKEV0X80" # Google Analytics id for the site
     anonymize_ip: false # Anonymize IP tracking for Analytics
+    gtag_id : "GTM-T7V49MX"
+    ga4_id : "G-G36CSBPQ7J"
 
 
 ## => Build
@@ -185,6 +190,8 @@ exclude:
   - README.md
   - /assigments
   - CONTRIBUTING.md
+  - jekyll-text-theme.gemspec
+
 
 defaults:
   - scope:
@@ -192,11 +199,11 @@ defaults:
       type: posts
     values:
       layout: article
-      sharing: true
+      sharing: false
       license: true
       aside:
         toc: true
-      show_edit_on_github: false
+      show_edit_on_github: true
       show_subscribe: true
       pageview: true
 
@@ -208,3 +215,5 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jemoji
+  - jekyll-postfiles
+  - jekyll-seo-tag
