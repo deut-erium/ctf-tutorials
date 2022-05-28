@@ -18,7 +18,7 @@
 ##############################
 text_skin: "dark" # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: "tomorrow-night-bright" # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
-url     : "https://deut-erium.github.io/ctf-tutorials"
+url     : "https://deut-erium.github.io"
 baseurl : "/ctf-tutorials"
 title   : Blog on CTFs
 tagline : "Himanshu Sheoran's tutorial blog about CTFs"
